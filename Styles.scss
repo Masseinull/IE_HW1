@@ -1,7 +1,14 @@
 @use 'variables';
+body {
+  background-color: #E5E5E5;
+}
 p {
   font-family: variables.$my-font;
 }
 .sidebar{
   background-color: variables.$parts-background;
+  width: 305px;
+  height: 1315px;
+  left: 0px;
+  top: 0px;
 }
