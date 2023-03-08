@@ -1,0 +1,7 @@
+@use 'variables';
+p {
+  font-family: variables.$my-font;
+}
+.sidebar{
+  background-color: variables.$parts-background;
+}
