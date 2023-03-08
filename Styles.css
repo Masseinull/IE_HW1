@@ -1,0 +1,17 @@
+body {
+  background-color: #E5E5E5;
+}
+
+p {
+  font-family: Inter;
+}
+
+.sidebar {
+  background-color: white;
+  width: 305px;
+  height: 1315px;
+  left: 0px;
+  top: 0px;
+}
+
+/*# sourceMappingURL=Styles.css.map */
