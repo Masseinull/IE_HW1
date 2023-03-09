@@ -119,6 +119,9 @@ h4 {
 #line3{
   top: 735px;
 }
+#line4{
+  top: 1027px;
+}
 .information-field {
   p {
     color: variables.$black;
@@ -215,11 +218,11 @@ h4 {
     text-align: right;
     position: absolute;
     height: 24px;
+    left: 222px;
   }
 }
 
 #persian-lev {
-  left: 222px;
   top: 594px;
 }
 
@@ -229,6 +232,56 @@ h4 {
 }
 
 #spanish-lev {
-  left: 222px;
   top: 678px;
+}
+.contact {
+  h4 {
+    position: absolute;
+    width: 173px;
+    height: 22px;
+    left: 40px;
+    top: 768px;
+  }
+
+  p {
+    position: absolute;
+    height: 24px;
+    left: 37px;
+  }
+}
+#email{
+  left: 40px;
+  top: 829px;
+}
+#phone{
+  top: 877px;
+}
+#telegram{
+  top: 921px;
+}
+#skype{
+  top: 964px;
+}
+.contact-value {
+  p {
+    text-align: right;
+    position: absolute;
+    height: 24px;
+    left: 153px;
+  }
+}
+#email-val{
+  text-decoration-line: underline;
+  top: 824px;
+}
+#phone-val{
+  top: 876px;
+}
+#telegram-val{
+  left: 152px;
+  top: 923px;
+}
+#skype-val{
+  left: 152px;
+  top: 964px;
 }
