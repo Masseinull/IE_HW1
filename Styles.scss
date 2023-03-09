@@ -9,7 +9,7 @@ p {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  margin: 0px;
+  margin: 0;
   text-align: center;
 }
 h4 {
@@ -18,15 +18,15 @@ h4 {
   font-weight: 500;
   font-size: 18px;
   line-height: 123.6%;
-  margin: 0px;
+  margin: 0;
   text-align: center;
 }
 .sidebar{
   background-color: variables.$parts-background;
   width: 305px;
   height: 1315px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 #profile-image{
   width: 150px;
@@ -60,11 +60,8 @@ h4 {
   top: 268px;
 }
 
-//.social-media{
-//    display: flex;
-//}
 img.icon{
-  padding: 3px;
+  padding: 1px;
   position: absolute;
   width: 24px;
   height: 24px;
@@ -89,4 +86,15 @@ img.icon{
 }
 #dribble{
   left: 235px;
+}
+
+.line{
+  position: absolute;
+  width: 220px;
+  height: 0;
+  left: 40px;
+  border: variables.$lines-border;
+}
+#line1{
+  top: 356px;
 }
