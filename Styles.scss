@@ -122,6 +122,9 @@ h4 {
 #line4{
   top: 1027px;
 }
+#line5{
+  top: 1225px;
+}
 .information-field {
   p {
     color: variables.$black;
@@ -284,4 +287,47 @@ h4 {
 #skype-val{
   left: 152px;
   top: 964px;
+}
+.skills{
+  h4{
+    position: absolute;
+    left: 40px;
+    top: 1052px;
+  }
+  p{
+    position: absolute;
+    height: 24px;
+    left: 55px;
+    margin-left: 15px;
+  }
+  img{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 40px;
+  }
+}
+#skill-logo-1{
+  top: 1093px;
+}
+#skill-logo-2{
+  top: 1122px;
+}
+#skill-logo-3{
+  top: 1151px;
+}
+#skill-logo-4{
+  top: 1180px;
+}
+#skill-1{
+  top: 1089px;
+}
+#skill-2{
+  top: 1118px;
+}
+#skill-3{
+  top: 1147px;
+}
+#skill-4{
+  top: 1176px;
 }
