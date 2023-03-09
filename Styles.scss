@@ -59,3 +59,34 @@ h4 {
   left: 78px;
   top: 268px;
 }
+
+//.social-media{
+//    display: flex;
+//}
+img.icon{
+  padding: 3px;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 307px;
+  background-color: variables.$icon-color;
+  border-radius: 50%;
+}
+#facebook{
+  left: 40px;
+}
+#instagram{
+  left: 79px;
+}
+#twitter{
+  left: 118px;
+}
+#linkedin{
+  left: 157px;
+}
+#youtube{
+  left: 196px;
+}
+#dribble{
+  left: 235px;
+}
