@@ -37,10 +37,8 @@ h4 {
   z-index: 1;
 }
 #available{
-  width: 16px;
-  height: 16px;
-  left: 198px;
-  top: 166px;
+  left: 187px;
+  top: 160px;
   position: absolute;
   z-index: 2;
 }
@@ -62,10 +60,8 @@ h4 {
 
 .icon {
   img {
-    padding: 1px;
+    padding: 5px;
     position: absolute;
-    width: 24px;
-    height: 24px;
     top: 307px;
     background-color: variables.$icon-color;
     border-radius: 50%;
