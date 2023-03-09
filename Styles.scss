@@ -60,14 +60,16 @@ h4 {
   top: 268px;
 }
 
-img.icon{
-  padding: 1px;
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  top: 307px;
-  background-color: variables.$icon-color;
-  border-radius: 50%;
+.icon {
+  img {
+    padding: 1px;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 307px;
+    background-color: variables.$icon-color;
+    border-radius: 50%;
+  }
 }
 #facebook{
   left: 40px;
