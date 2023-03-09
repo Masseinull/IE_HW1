@@ -1,7 +1,9 @@
 @use 'variables';
+
 body {
   background-color: variables.$main-background;
 }
+
 p {
   font-family: variables.$my-font;
   color: variables.$paragraph-color;
@@ -12,6 +14,7 @@ p {
   margin: 0;
   text-align: center;
 }
+
 h4 {
   font-family: variables.$my-font;
   font-style: normal;
@@ -21,14 +24,16 @@ h4 {
   margin: 0;
   text-align: center;
 }
-.sidebar{
+
+.sidebar {
   background-color: variables.$parts-background;
   width: 305px;
   height: 1315px;
   left: 0;
   top: 0;
 }
-#profile-image{
+
+#profile-image {
   width: 150px;
   height: 150px;
   left: 74px;
@@ -36,21 +41,23 @@ h4 {
   position: absolute;
   z-index: 1;
 }
-#available{
+
+#available {
   left: 187px;
   top: 160px;
   position: absolute;
   z-index: 2;
 }
 
-#sidebar-name{
+#sidebar-name {
   position: absolute;
   width: 142px;
   height: 22px;
   left: 77px;
   top: 231px;
 }
-#sidebar-job{
+
+#sidebar-job {
   position: absolute;
   width: 143px;
   height: 24px;
@@ -65,34 +72,107 @@ h4 {
     top: 307px;
     background-color: variables.$icon-color;
     border-radius: 50%;
+    margin-right: 15px;
   }
 }
-#facebook{
+
+#facebook {
   left: 40px;
 }
-#instagram{
+
+#instagram {
   left: 79px;
 }
-#twitter{
+
+#twitter {
   left: 118px;
 }
-#linkedin{
+
+#linkedin {
   left: 157px;
 }
-#youtube{
+
+#youtube {
   left: 196px;
 }
-#dribble{
+
+#dribble {
   left: 235px;
+  margin-right: 0;
 }
 
-.line{
+.line {
   position: absolute;
   width: 220px;
   height: 0;
   left: 40px;
   border: variables.$lines-border;
 }
-#line1{
+
+#line1 {
   top: 356px;
+}
+#line2{
+  top: 532px;
+}
+
+.information-field {
+  p {
+    color: variables.$black;
+    background-color: variables.$icon-color;
+    position: absolute;
+    height: 24px;
+    left: 40px;
+  }
+}
+
+#age-field {
+  width: 46px;
+  top: 381px;
+}
+
+#res-field {
+  width: 89px;
+  top: 415px;
+}
+
+#freelance-field {
+  width: 85px;
+  top: 449px;
+}
+
+#adr-field {
+  width: 75px;
+  top: 483px;
+}
+
+.information-value {
+  p {
+    color: variables.$black;
+    text-align: right;
+    position: absolute;
+    height: 24px;
+    margin-right: 45px;
+  }
+}
+
+#age-value {
+  left: 241px;
+  top: 381px;
+}
+
+#res-value {
+  left: 239px;
+  top: 415px;
+}
+
+#freelance-value {
+  color: variables.$green;
+  left: 195px;
+  top: 449px;
+}
+
+#adr-value {
+  left: 128px;
+  top: 483px;
 }

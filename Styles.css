@@ -69,6 +69,7 @@ h4 {
   top: 307px;
   background-color: #FFB400;
   border-radius: 50%;
+  margin-right: 15px;
 }
 
 #facebook {
@@ -93,6 +94,7 @@ h4 {
 
 #dribble {
   left: 235px;
+  margin-right: 0;
 }
 
 .line {
@@ -105,6 +107,67 @@ h4 {
 
 #line1 {
   top: 356px;
+}
+
+#line2 {
+  top: 532px;
+}
+
+.information-field p {
+  color: #2B2B2B;
+  background-color: #FFB400;
+  position: absolute;
+  height: 24px;
+  left: 40px;
+}
+
+#age-field {
+  width: 46px;
+  top: 381px;
+}
+
+#res-field {
+  width: 89px;
+  top: 415px;
+}
+
+#freelance-field {
+  width: 85px;
+  top: 449px;
+}
+
+#adr-field {
+  width: 75px;
+  top: 483px;
+}
+
+.information-value p {
+  color: #2B2B2B;
+  text-align: right;
+  position: absolute;
+  height: 24px;
+  margin-right: 45px;
+}
+
+#age-value {
+  left: 241px;
+  top: 381px;
+}
+
+#res-value {
+  left: 239px;
+  top: 415px;
+}
+
+#freelance-value {
+  color: #7EB942;
+  left: 195px;
+  top: 449px;
+}
+
+#adr-value {
+  left: 128px;
+  top: 483px;
 }
 
 /*# sourceMappingURL=Styles.css.map */
