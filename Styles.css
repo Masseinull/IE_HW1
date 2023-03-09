@@ -113,6 +113,10 @@ h4 {
   top: 532px;
 }
 
+#line3 {
+  top: 735px;
+}
+
 .information-field p {
   color: #2B2B2B;
   background-color: #FFB400;
@@ -168,6 +172,52 @@ h4 {
 #adr-value {
   left: 128px;
   top: 483px;
+}
+
+.languages h4 {
+  position: absolute;
+  width: 95px;
+  height: 22px;
+  left: 40px;
+  top: 557px;
+}
+.languages p {
+  position: absolute;
+  height: 24px;
+  left: 40px;
+}
+
+#persian {
+  top: 594px;
+}
+
+#english {
+  top: 636px;
+}
+
+#spanish {
+  top: 678px;
+}
+
+.languages-level p {
+  text-align: right;
+  position: absolute;
+  height: 24px;
+}
+
+#persian-lev {
+  left: 222px;
+  top: 594px;
+}
+
+#english-lev {
+  left: 219px;
+  top: 636px;
+}
+
+#spanish-lev {
+  left: 222px;
+  top: 678px;
 }
 
 /*# sourceMappingURL=Styles.css.map */

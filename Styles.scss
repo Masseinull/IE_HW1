@@ -112,10 +112,13 @@ h4 {
 #line1 {
   top: 356px;
 }
-#line2{
+
+#line2 {
   top: 532px;
 }
-
+#line3{
+  top: 735px;
+}
 .information-field {
   p {
     color: variables.$black;
@@ -175,4 +178,57 @@ h4 {
 #adr-value {
   left: 128px;
   top: 483px;
+}
+
+.languages {
+  h4 {
+    position: absolute;
+    width: 95px;
+    height: 22px;
+    left: 40px;
+    top: 557px;
+  }
+
+  p {
+    position: absolute;
+    height: 24px;
+    left: 40px;
+  }
+}
+
+#persian {
+  top: 594px;
+}
+
+#english {
+  top: 636px;
+
+}
+
+#spanish {
+  top: 678px;
+
+}
+
+.languages-level {
+  p {
+    text-align: right;
+    position: absolute;
+    height: 24px;
+  }
+}
+
+#persian-lev {
+  left: 222px;
+  top: 594px;
+}
+
+#english-lev {
+  left: 219px;
+  top: 636px;
+}
+
+#spanish-lev {
+  left: 222px;
+  top: 678px;
 }
