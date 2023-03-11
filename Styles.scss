@@ -61,39 +61,40 @@ h4 {
   height: 1315px;
   left: 0;
   top: 0;
+  #profile-image {
+    width: 150px;
+    height: 150px;
+    left: 74px;
+    top: 50px;
+    position: absolute;
+    z-index: 1;
+  }
+
+  #available {
+    left: 187px;
+    top: 160px;
+    position: absolute;
+    z-index: 2;
+  }
+
+  #sidebar-name {
+    position: absolute;
+    width: 142px;
+    height: 22px;
+    left: 77px;
+    top: 231px;
+  }
+
+  #sidebar-job {
+    position: absolute;
+    width: 143px;
+    height: 24px;
+    left: 78px;
+    top: 268px;
+  }
 }
 
-#profile-image {
-  width: 150px;
-  height: 150px;
-  left: 74px;
-  top: 50px;
-  position: absolute;
-  z-index: 1;
-}
 
-#available {
-  left: 187px;
-  top: 160px;
-  position: absolute;
-  z-index: 2;
-}
-
-#sidebar-name {
-  position: absolute;
-  width: 142px;
-  height: 22px;
-  left: 77px;
-  top: 231px;
-}
-
-#sidebar-job {
-  position: absolute;
-  width: 143px;
-  height: 24px;
-  left: 78px;
-  top: 268px;
-}
 
 .icon {
   img {
@@ -104,31 +105,32 @@ h4 {
     border-radius: 50%;
     margin-right: 15px;
   }
-}
 
-#facebook {
-  left: 40px;
-}
+  #facebook {
+    left: 40px;
+  }
 
-#instagram {
-  left: 79px;
-}
+  #instagram {
+    left: 79px;
+  }
 
-#twitter {
-  left: 118px;
-}
+  #twitter {
+    left: 118px;
+  }
 
-#linkedin {
-  left: 157px;
-}
+  #linkedin {
+    left: 157px;
+  }
 
-#youtube {
-  left: 196px;
-}
+  #youtube {
+    left: 196px;
+  }
 
-#dribble {
-  left: 235px;
-  margin-right: 0;
+  #dribble {
+    left: 235px;
+    margin-right: 0;
+  }
+
 }
 
 .line {
@@ -163,27 +165,28 @@ h4 {
     height: 24px;
     left: 40px;
   }
+  #age-field {
+    width: 46px;
+    top: 381px;
+  }
+
+  #res-field {
+    width: 89px;
+    top: 415px;
+  }
+
+  #freelance-field {
+    width: 85px;
+    top: 449px;
+  }
+
+  #adr-field {
+    width: 75px;
+    top: 483px;
+  }
 }
 
-#age-field {
-  width: 46px;
-  top: 381px;
-}
 
-#res-field {
-  width: 89px;
-  top: 415px;
-}
-
-#freelance-field {
-  width: 85px;
-  top: 449px;
-}
-
-#adr-field {
-  width: 75px;
-  top: 483px;
-}
 
 .information-value {
   p {
@@ -193,28 +196,29 @@ h4 {
     height: 24px;
     margin-right: 45px;
   }
+
+  #age-value {
+    left: 241px;
+    top: 381px;
+  }
+
+  #res-value {
+    left: 239px;
+    top: 415px;
+  }
+
+  #freelance-value {
+    color: variables.$green;
+    left: 195px;
+    top: 449px;
+  }
+
+  #adr-value {
+    left: 128px;
+    top: 483px;
+  }
 }
 
-#age-value {
-  left: 241px;
-  top: 381px;
-}
-
-#res-value {
-  left: 239px;
-  top: 415px;
-}
-
-#freelance-value {
-  color: variables.$green;
-  left: 195px;
-  top: 449px;
-}
-
-#adr-value {
-  left: 128px;
-  top: 483px;
-}
 
 .languages {
   h4 {
@@ -230,21 +234,22 @@ h4 {
     height: 24px;
     left: 40px;
   }
+
+  #persian {
+    top: 594px;
+  }
+
+  #english {
+    top: 636px;
+
+  }
+
+  #spanish {
+    top: 678px;
+
+  }
 }
 
-#persian {
-  top: 594px;
-}
-
-#english {
-  top: 636px;
-
-}
-
-#spanish {
-  top: 678px;
-
-}
 
 .languages-level {
   p {
@@ -253,20 +258,21 @@ h4 {
     height: 24px;
     left: 222px;
   }
+  #persian-lev {
+    top: 594px;
+  }
+
+  #english-lev {
+    left: 219px;
+    top: 636px;
+  }
+
+  #spanish-lev {
+    top: 678px;
+  }
 }
 
-#persian-lev {
-  top: 594px;
-}
 
-#english-lev {
-  left: 219px;
-  top: 636px;
-}
-
-#spanish-lev {
-  top: 678px;
-}
 .contact {
   h4 {
     position: absolute;
@@ -281,20 +287,21 @@ h4 {
     height: 24px;
     left: 37px;
   }
+  #email{
+    left: 40px;
+    top: 829px;
+  }
+  #phone{
+    top: 877px;
+  }
+  #telegram{
+    top: 921px;
+  }
+  #skype{
+    top: 964px;
+  }
 }
-#email{
-  left: 40px;
-  top: 829px;
-}
-#phone{
-  top: 877px;
-}
-#telegram{
-  top: 921px;
-}
-#skype{
-  top: 964px;
-}
+
 .contact-value {
   p {
     text-align: right;
@@ -302,21 +309,21 @@ h4 {
     height: 24px;
     left: 153px;
   }
-}
-#email-val{
-  text-decoration-line: underline;
-  top: 824px;
-}
-#phone-val{
-  top: 876px;
-}
-#telegram-val{
-  left: 152px;
-  top: 923px;
-}
-#skype-val{
-  left: 152px;
-  top: 964px;
+  #email-val{
+    text-decoration-line: underline;
+    top: 824px;
+  }
+  #phone-val{
+    top: 876px;
+  }
+  #telegram-val{
+    left: 152px;
+    top: 923px;
+  }
+  #skype-val{
+    left: 152px;
+    top: 964px;
+  }
 }
 .skills{
   h4{
@@ -337,52 +344,53 @@ h4 {
     box-sizing: border-box;
     border: 1px solid variables.$icon-color;
   }
-}
-#rect-left-1{
-  left: 40px;
-  top: 1093px;
-}
-#rect-right-1{
-  left: 45px;
-  top: 1098px;
-}
-#rect-left-2{
-  left: 40px;
-  top: 1122px;
-}
-#rect-right-2{
-  left: 45px;
-  top: 1127px;
-}
-#rect-left-3{
-  left: 40px;
-  top: 1151px;
-}
-#rect-right-3{
-  left: 45px;
-  top: 1156px;
-}
-#rect-left-4{
-  left: 40px;
-  top: 1180px;
-}
-#rect-right-4{
-  left: 45px;
-  top: 1185px;
+  #rect-left-1{
+    left: 40px;
+    top: 1093px;
+  }
+  #rect-right-1{
+    left: 45px;
+    top: 1098px;
+  }
+  #rect-left-2{
+    left: 40px;
+    top: 1122px;
+  }
+  #rect-right-2{
+    left: 45px;
+    top: 1127px;
+  }
+  #rect-left-3{
+    left: 40px;
+    top: 1151px;
+  }
+  #rect-right-3{
+    left: 45px;
+    top: 1156px;
+  }
+  #rect-left-4{
+    left: 40px;
+    top: 1180px;
+  }
+  #rect-right-4{
+    left: 45px;
+    top: 1185px;
+  }
+
+  #skill-1{
+    top: 1089px;
+  }
+  #skill-2{
+    top: 1118px;
+  }
+  #skill-3{
+    top: 1147px;
+  }
+  #skill-4{
+    top: 1176px;
+  }
 }
 
-#skill-1{
-  top: 1089px;
-}
-#skill-2{
-  top: 1118px;
-}
-#skill-3{
-  top: 1147px;
-}
-#skill-4{
-  top: 1176px;
-}
 #download-cv{
   position: absolute;
   top: 1250px;

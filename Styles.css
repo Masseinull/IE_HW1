@@ -61,8 +61,7 @@ h4 {
   left: 0;
   top: 0;
 }
-
-#profile-image {
+.sidebar #profile-image {
   width: 150px;
   height: 150px;
   left: 74px;
@@ -70,23 +69,20 @@ h4 {
   position: absolute;
   z-index: 1;
 }
-
-#available {
+.sidebar #available {
   left: 187px;
   top: 160px;
   position: absolute;
   z-index: 2;
 }
-
-#sidebar-name {
+.sidebar #sidebar-name {
   position: absolute;
   width: 142px;
   height: 22px;
   left: 77px;
   top: 231px;
 }
-
-#sidebar-job {
+.sidebar #sidebar-job {
   position: absolute;
   width: 143px;
   height: 24px;
@@ -102,28 +98,22 @@ h4 {
   border-radius: 50%;
   margin-right: 15px;
 }
-
-#facebook {
+.icon #facebook {
   left: 40px;
 }
-
-#instagram {
+.icon #instagram {
   left: 79px;
 }
-
-#twitter {
+.icon #twitter {
   left: 118px;
 }
-
-#linkedin {
+.icon #linkedin {
   left: 157px;
 }
-
-#youtube {
+.icon #youtube {
   left: 196px;
 }
-
-#dribble {
+.icon #dribble {
   left: 235px;
   margin-right: 0;
 }
@@ -163,23 +153,19 @@ h4 {
   height: 24px;
   left: 40px;
 }
-
-#age-field {
+.information-field #age-field {
   width: 46px;
   top: 381px;
 }
-
-#res-field {
+.information-field #res-field {
   width: 89px;
   top: 415px;
 }
-
-#freelance-field {
+.information-field #freelance-field {
   width: 85px;
   top: 449px;
 }
-
-#adr-field {
+.information-field #adr-field {
   width: 75px;
   top: 483px;
 }
@@ -191,24 +177,20 @@ h4 {
   height: 24px;
   margin-right: 45px;
 }
-
-#age-value {
+.information-value #age-value {
   left: 241px;
   top: 381px;
 }
-
-#res-value {
+.information-value #res-value {
   left: 239px;
   top: 415px;
 }
-
-#freelance-value {
+.information-value #freelance-value {
   color: #7EB942;
   left: 195px;
   top: 449px;
 }
-
-#adr-value {
+.information-value #adr-value {
   left: 128px;
   top: 483px;
 }
@@ -225,16 +207,13 @@ h4 {
   height: 24px;
   left: 40px;
 }
-
-#persian {
+.languages #persian {
   top: 594px;
 }
-
-#english {
+.languages #english {
   top: 636px;
 }
-
-#spanish {
+.languages #spanish {
   top: 678px;
 }
 
@@ -244,17 +223,14 @@ h4 {
   height: 24px;
   left: 222px;
 }
-
-#persian-lev {
+.languages-level #persian-lev {
   top: 594px;
 }
-
-#english-lev {
+.languages-level #english-lev {
   left: 219px;
   top: 636px;
 }
-
-#spanish-lev {
+.languages-level #spanish-lev {
   top: 678px;
 }
 
@@ -270,21 +246,17 @@ h4 {
   height: 24px;
   left: 37px;
 }
-
-#email {
+.contact #email {
   left: 40px;
   top: 829px;
 }
-
-#phone {
+.contact #phone {
   top: 877px;
 }
-
-#telegram {
+.contact #telegram {
   top: 921px;
 }
-
-#skype {
+.contact #skype {
   top: 964px;
 }
 
@@ -294,22 +266,18 @@ h4 {
   height: 24px;
   left: 153px;
 }
-
-#email-val {
+.contact-value #email-val {
   text-decoration-line: underline;
   top: 824px;
 }
-
-#phone-val {
+.contact-value #phone-val {
   top: 876px;
 }
-
-#telegram-val {
+.contact-value #telegram-val {
   left: 152px;
   top: 923px;
 }
-
-#skype-val {
+.contact-value #skype-val {
   left: 152px;
   top: 964px;
 }
@@ -332,60 +300,48 @@ h4 {
   box-sizing: border-box;
   border: 1px solid #FFB400;
 }
-
-#rect-left-1 {
+.skills #rect-left-1 {
   left: 40px;
   top: 1093px;
 }
-
-#rect-right-1 {
+.skills #rect-right-1 {
   left: 45px;
   top: 1098px;
 }
-
-#rect-left-2 {
+.skills #rect-left-2 {
   left: 40px;
   top: 1122px;
 }
-
-#rect-right-2 {
+.skills #rect-right-2 {
   left: 45px;
   top: 1127px;
 }
-
-#rect-left-3 {
+.skills #rect-left-3 {
   left: 40px;
   top: 1151px;
 }
-
-#rect-right-3 {
+.skills #rect-right-3 {
   left: 45px;
   top: 1156px;
 }
-
-#rect-left-4 {
+.skills #rect-left-4 {
   left: 40px;
   top: 1180px;
 }
-
-#rect-right-4 {
+.skills #rect-right-4 {
   left: 45px;
   top: 1185px;
 }
-
-#skill-1 {
+.skills #skill-1 {
   top: 1089px;
 }
-
-#skill-2 {
+.skills #skill-2 {
   top: 1118px;
 }
-
-#skill-3 {
+.skills #skill-3 {
   top: 1147px;
 }
-
-#skill-4 {
+.skills #skill-4 {
   top: 1176px;
 }
 
