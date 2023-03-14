@@ -24,375 +24,379 @@ h4 {
   margin: 0;
   text-align: center;
 }
-.intro{
-  background-color: variables.$parts-background;
-  position: absolute;
-  width: 970px;
-  height: 531.9px;
-  left: 335px;
-  top: 0;
-  img{
-    position: absolute;
-    width: 325.72px;
-    height: 522.89px;
-    left: 586.68px;
-    top: 9.11px;
-  }
-  h6{
-    position: absolute;
-    width: 424px;
-    height: 100.23px;
-    left: 60px;
-    top: 260.82px;
-    margin: 0;
-    font-family: variables.$my-font;
-    text-transform: capitalize;
-    font-weight: 400;
-    line-height: 24px;
-    font-size: 16px;
-    color: variables.$paragraph-color;
-  }
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .sidebar {
   background-color: variables.$parts-background;
+  width: 25%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.profile {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+}
+.social-media {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-media > span {
+  background-color: orange;
+  border-radius: 50%;
+  margin-right: 15px;
+  padding: 7px;
+}
+
+.available   {
   position: absolute;
-  width: 305px;
-  height: 1315px;
-  left: 0;
-  top: 0;
-  #profile-image {
-    width: 150px;
-    height: 150px;
-    left: 74px;
-    top: 50px;
-    position: absolute;
-    z-index: 1;
-  }
-
-  #available {
-    left: 187px;
-    top: 160px;
-    position: absolute;
-    z-index: 2;
-  }
-
-  #sidebar-name {
-    position: absolute;
-    width: 142px;
-    height: 22px;
-    left: 77px;
-    top: 231px;
-  }
-
-  #sidebar-job {
-    position: absolute;
-    width: 143px;
-    height: 24px;
-    left: 78px;
-    top: 268px;
-  }
+  top: 115px;
+  left: 270px;
 }
 
-
-
-.icon {
-  img {
-    padding: 5px;
-    position: absolute;
-    top: 307px;
-    background-color: variables.$icon-color;
-    border-radius: 50%;
-    margin-right: 15px;
-  }
-
-  #facebook {
-    left: 40px;
-  }
-
-  #instagram {
-    left: 79px;
-  }
-
-  #twitter {
-    left: 118px;
-  }
-
-  #linkedin {
-    left: 157px;
-  }
-
-  #youtube {
-    left: 196px;
-  }
-
-  #dribble {
-    left: 235px;
-    margin-right: 0;
-  }
-
+.intro {
+  background-color: variables.$parts-background;
+  width: 70%;
 }
-
-.line {
-  position: absolute;
-  width: 220px;
-  height: 0;
-  left: 40px;
-  border: variables.$lines-border;
-}
-
-#line1 {
-  top: 356px;
-}
-
-#line2 {
-  top: 532px;
-}
-#line3{
-  top: 735px;
-}
-#line4{
-  top: 1027px;
-}
-#line5{
-  top: 1225px;
-}
-.information-field {
-  p {
-    color: variables.$black;
-    background-color: variables.$icon-color;
-    position: absolute;
-    height: 24px;
-    left: 40px;
-  }
-  #age-field {
-    width: 46px;
-    top: 381px;
-  }
-
-  #res-field {
-    width: 89px;
-    top: 415px;
-  }
-
-  #freelance-field {
-    width: 85px;
-    top: 449px;
-  }
-
-  #adr-field {
-    width: 75px;
-    top: 483px;
-  }
-}
-
-
-
-.information-value {
-  p {
-    color: variables.$black;
-    text-align: right;
-    position: absolute;
-    height: 24px;
-    margin-right: 45px;
-  }
-
-  #age-value {
-    left: 241px;
-    top: 381px;
-  }
-
-  #res-value {
-    left: 239px;
-    top: 415px;
-  }
-
-  #freelance-value {
-    color: variables.$green;
-    left: 195px;
-    top: 449px;
-  }
-
-  #adr-value {
-    left: 128px;
-    top: 483px;
-  }
-}
-
-
-.languages {
-  h4 {
-    position: absolute;
-    width: 95px;
-    height: 22px;
-    left: 40px;
-    top: 557px;
-  }
-
-  p {
-    position: absolute;
-    height: 24px;
-    left: 40px;
-  }
-
-  #persian {
-    top: 594px;
-  }
-
-  #english {
-    top: 636px;
-
-  }
-
-  #spanish {
-    top: 678px;
-
-  }
-}
-
-
-.languages-level {
-  p {
-    text-align: right;
-    position: absolute;
-    height: 24px;
-    left: 222px;
-  }
-  #persian-lev {
-    top: 594px;
-  }
-
-  #english-lev {
-    left: 219px;
-    top: 636px;
-  }
-
-  #spanish-lev {
-    top: 678px;
-  }
-}
-
-
-.contact {
-  h4 {
-    position: absolute;
-    width: 173px;
-    height: 22px;
-    left: 40px;
-    top: 768px;
-  }
-
-  p {
-    position: absolute;
-    height: 24px;
-    left: 37px;
-  }
-  #email{
-    left: 40px;
-    top: 829px;
-  }
-  #phone{
-    top: 877px;
-  }
-  #telegram{
-    top: 921px;
-  }
-  #skype{
-    top: 964px;
-  }
-}
-
-.contact-value {
-  p {
-    text-align: right;
-    position: absolute;
-    height: 24px;
-    left: 153px;
-  }
-  #email-val{
-    text-decoration-line: underline;
-    top: 824px;
-  }
-  #phone-val{
-    top: 876px;
-  }
-  #telegram-val{
-    left: 152px;
-    top: 923px;
-  }
-  #skype-val{
-    left: 152px;
-    top: 964px;
-  }
-}
-.skills{
-  h4{
-    position: absolute;
-    left: 40px;
-    top: 1052px;
-  }
-  p{
-    position: absolute;
-    height: 24px;
-    left: 55px;
-    margin-left: 15px;
-  }
-  span{
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    box-sizing: border-box;
-    border: 1px solid variables.$icon-color;
-  }
-  #rect-left-1{
-    left: 40px;
-    top: 1093px;
-  }
-  #rect-right-1{
-    left: 45px;
-    top: 1098px;
-  }
-  #rect-left-2{
-    left: 40px;
-    top: 1122px;
-  }
-  #rect-right-2{
-    left: 45px;
-    top: 1127px;
-  }
-  #rect-left-3{
-    left: 40px;
-    top: 1151px;
-  }
-  #rect-right-3{
-    left: 45px;
-    top: 1156px;
-  }
-  #rect-left-4{
-    left: 40px;
-    top: 1180px;
-  }
-  #rect-right-4{
-    left: 45px;
-    top: 1185px;
-  }
-
-  #skill-1{
-    top: 1089px;
-  }
-  #skill-2{
-    top: 1118px;
-  }
-  #skill-3{
-    top: 1147px;
-  }
-  #skill-4{
-    top: 1176px;
-  }
-}
-
-#download-cv{
-  position: absolute;
-  top: 1250px;
-  left: 40px;
-}
+//.intro{
+//  background-color: variables.$parts-background;
+//  position: absolute;
+//  width: 970px;
+//  height: 531.9px;
+//  left: 335px;
+//  top: 0;
+//  img{
+//    position: absolute;
+//    width: 325.72px;
+//    height: 522.89px;
+//    left: 586.68px;
+//    top: 9.11px;
+//  }
+//  h6{
+//    position: absolute;
+//    width: 424px;
+//    height: 100.23px;
+//    left: 60px;
+//    top: 260.82px;
+//    margin: 0;
+//    font-family: variables.$my-font;
+//    text-transform: capitalize;
+//    font-weight: 400;
+//    line-height: 24px;
+//    font-size: 16px;
+//    color: variables.$paragraph-color;
+//  }
+//}
+//
+//.sidebar {
+//  background-color: variables.$parts-background;
+//  position: absolute;
+//  width: 305px;
+//  height: 1315px;
+//  left: 0;
+//  top: 0;
+//
+//
+//  #sidebar-name {
+//    position: absolute;
+//    width: 142px;
+//    height: 22px;
+//    left: 77px;
+//    top: 231px;
+//  }
+//
+//  #sidebar-job {
+//    position: absolute;
+//    width: 143px;
+//    height: 24px;
+//    left: 78px;
+//    top: 268px;
+//  }
+//}
+//
+//
+//
+//.icon {
+//  img {
+//    padding: 5px;
+//    position: absolute;
+//    top: 307px;
+//    background-color: variables.$icon-color;
+//    border-radius: 50%;
+//    margin-right: 15px;
+//  }
+//
+//}
+//
+//.line {
+//  position: absolute;
+//  width: 220px;
+//  height: 0;
+//  left: 40px;
+//  border: variables.$lines-border;
+//}
+//
+//#line1 {
+//  top: 356px;
+//}
+//
+//#line2 {
+//  top: 532px;
+//}
+//#line3{
+//  top: 735px;
+//}
+//#line4{
+//  top: 1027px;
+//}
+//#line5{
+//  top: 1225px;
+//}
+//.information-field {
+//  p {
+//    color: variables.$black;
+//    background-color: variables.$icon-color;
+//    position: absolute;
+//    height: 24px;
+//    left: 40px;
+//  }
+//  #age-field {
+//    width: 46px;
+//    top: 381px;
+//  }
+//
+//  #res-field {
+//    width: 89px;
+//    top: 415px;
+//  }
+//
+//  #freelance-field {
+//    width: 85px;
+//    top: 449px;
+//  }
+//
+//  #adr-field {
+//    width: 75px;
+//    top: 483px;
+//  }
+//}
+//
+//
+//
+//.information-value {
+//  p {
+//    color: variables.$black;
+//    text-align: right;
+//    position: absolute;
+//    height: 24px;
+//    margin-right: 45px;
+//  }
+//
+//  #age-value {
+//    left: 241px;
+//    top: 381px;
+//  }
+//
+//  #res-value {
+//    left: 239px;
+//    top: 415px;
+//  }
+//
+//  #freelance-value {
+//    color: variables.$green;
+//    left: 195px;
+//    top: 449px;
+//  }
+//
+//  #adr-value {
+//    left: 128px;
+//    top: 483px;
+//  }
+//}
+//
+//
+//.languages {
+//  h4 {
+//    position: absolute;
+//    width: 95px;
+//    height: 22px;
+//    left: 40px;
+//    top: 557px;
+//  }
+//
+//  p {
+//    position: absolute;
+//    height: 24px;
+//    left: 40px;
+//  }
+//
+//  #persian {
+//    top: 594px;
+//  }
+//
+//  #english {
+//    top: 636px;
+//
+//  }
+//
+//  #spanish {
+//    top: 678px;
+//
+//  }
+//}
+//
+//
+//.languages-level {
+//  p {
+//    text-align: right;
+//    position: absolute;
+//    height: 24px;
+//    left: 222px;
+//  }
+//  #persian-lev {
+//    top: 594px;
+//  }
+//
+//  #english-lev {
+//    left: 219px;
+//    top: 636px;
+//  }
+//
+//  #spanish-lev {
+//    top: 678px;
+//  }
+//}
+//
+//
+//.contact {
+//  h4 {
+//    position: absolute;
+//    width: 173px;
+//    height: 22px;
+//    left: 40px;
+//    top: 768px;
+//  }
+//
+//  p {
+//    position: absolute;
+//    height: 24px;
+//    left: 37px;
+//  }
+//  #email{
+//    left: 40px;
+//    top: 829px;
+//  }
+//  #phone{
+//    top: 877px;
+//  }
+//  #telegram{
+//    top: 921px;
+//  }
+//  #skype{
+//    top: 964px;
+//  }
+//}
+//
+//.contact-value {
+//  p {
+//    text-align: right;
+//    position: absolute;
+//    height: 24px;
+//    left: 153px;
+//  }
+//  #email-val{
+//    text-decoration-line: underline;
+//    top: 824px;
+//  }
+//  #phone-val{
+//    top: 876px;
+//  }
+//  #telegram-val{
+//    left: 152px;
+//    top: 923px;
+//  }
+//  #skype-val{
+//    left: 152px;
+//    top: 964px;
+//  }
+//}
+//.skills{
+//  h4{
+//    position: absolute;
+//    left: 40px;
+//    top: 1052px;
+//  }
+//  p{
+//    position: absolute;
+//    height: 24px;
+//    left: 55px;
+//    margin-left: 15px;
+//  }
+//  span{
+//    position: absolute;
+//    width: 10px;
+//    height: 10px;
+//    box-sizing: border-box;
+//    border: 1px solid variables.$icon-color;
+//  }
+//  #rect-left-1{
+//    left: 40px;
+//    top: 1093px;
+//  }
+//  #rect-right-1{
+//    left: 45px;
+//    top: 1098px;
+//  }
+//  #rect-left-2{
+//    left: 40px;
+//    top: 1122px;
+//  }
+//  #rect-right-2{
+//    left: 45px;
+//    top: 1127px;
+//  }
+//  #rect-left-3{
+//    left: 40px;
+//    top: 1151px;
+//  }
+//  #rect-right-3{
+//    left: 45px;
+//    top: 1156px;
+//  }
+//  #rect-left-4{
+//    left: 40px;
+//    top: 1180px;
+//  }
+//  #rect-right-4{
+//    left: 45px;
+//    top: 1185px;
+//  }
+//
+//  #skill-1{
+//    top: 1089px;
+//  }
+//  #skill-2{
+//    top: 1118px;
+//  }
+//  #skill-3{
+//    top: 1147px;
+//  }
+//  #skill-4{
+//    top: 1176px;
+//  }
+//}
+//
+//#download-cv{
+//  position: absolute;
+//  top: 1250px;
+//  left: 40px;
+//}
