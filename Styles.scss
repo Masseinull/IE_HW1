@@ -27,7 +27,8 @@ h4 {
 }
 
 .line {
-  margin-top: 1vw;
+  margin-top: 5%;
+  margin-bottom: 5%;
   width: 80%;
   alignment: center;
 }
@@ -48,7 +49,6 @@ h4 {
   justify-content: space-between;
 
   div {
-    margin-top: 5%;
   }
 
   p {
@@ -70,17 +70,21 @@ h4 {
   }
 }
 
-#available {
-  position: absolute;
-  width: auto;
-  align-self: flex-end;
-}
+//#available {
+//  position: absolute;
+//  width: 40%;
+//  height: 40%;
+//  top: 1vw;
+//  left: 1vw;
+//}
 
 .social-media {
+  margin-top: 5%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  //gap: 1.3vw;
 
   img {
     width: 100%;
@@ -96,19 +100,42 @@ h4 {
   width: 50%;
   height: 50%;
 }
-
+.information{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  //align-items: flex-start;
+  gap: 5vw;
+}
 .information-field {
   display: flex;
   flex-direction: column;
-  //align-items: left;
+  width: 100%;
+  align-items: flex-start;
+  height: 100%;
+  justify-content: space-between;
+  p{
+    background-color: variables.$icon-color;
+    color: variables.$black;
+    padding: 5%;
+  }
 }
 
 .information-value {
   display: flex;
   flex-direction: column;
-  //align-items: flex-end;
+  width: 100%;
+  align-items: flex-end;
+  height: 100%;
+  justify-content: space-between;
+  p{
+    //padding: 2%;
+    //alignment: left;
+  }
 }
-
+#freelance-value{
+  color: variables.$green;
+}
 .download-cv {
   display: flex;
   align-items: center;
@@ -169,70 +196,6 @@ h4 {
 //
 //
 //}
-//
-//.information-field {
-//  p {
-//    color: variables.$black;
-//    background-color: variables.$icon-color;
-//    position: absolute;
-//    height: 24px;
-//    left: 40px;
-//  }
-//  #age-field {
-//    width: 46px;
-//    top: 381px;
-//  }
-//
-//  #res-field {
-//    width: 89px;
-//    top: 415px;
-//  }
-//
-//  #freelance-field {
-//    width: 85px;
-//    top: 449px;
-//  }
-//
-//  #adr-field {
-//    width: 75px;
-//    top: 483px;
-//  }
-//}
-//
-//
-//
-//.information-value {
-//  p {
-//    color: variables.$black;
-//    text-align: right;
-//    position: absolute;
-//    height: 24px;
-//    margin-right: 45px;
-//  }
-//
-//  #age-value {
-//    left: 241px;
-//    top: 381px;
-//  }
-//
-//  #res-value {
-//    left: 239px;
-//    top: 415px;
-//  }
-//
-//  #freelance-value {
-//    color: variables.$green;
-//    left: 195px;
-//    top: 449px;
-//  }
-//
-//  #adr-value {
-//    left: 128px;
-//    top: 483px;
-//  }
-//}
-//
-//
 //.languages {
 //  h4 {
 //    position: absolute;
