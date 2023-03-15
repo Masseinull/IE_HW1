@@ -368,6 +368,7 @@ h6 {
   text-transform: capitalize;
   color: #767676;
   text-align: left;
+  line-height: 1.75vw;
 }
 
 .photo-intro {
