@@ -216,6 +216,62 @@ h4 {
   justify-content: space-between;
 }
 
+.skills-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 7vw;
+  margin-bottom: 1vw;
+  width: 100%;
+}
+.skills-header h4 {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 800px) {
+  .skills-header {
+    margin-bottom: 0.1vw;
+  }
+}
+
+.skills-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: flex-start;
+  gap: 1vw;
+}
+
+.skill-logo {
+  display: flex;
+  flex-direction: column;
+  width: 16%;
+  max-width: 16%;
+  align-items: flex-end;
+  max-height: 20%;
+  justify-content: space-between;
+  gap: 2vw;
+  margin-top: 0.2vw;
+}
+@media screen and (max-width: 1150px) {
+  .skill-logo {
+    height: 1%;
+    margin-left: 0.2vw;
+    gap: 2.2vw;
+  }
+}
+
+.skill-value {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+  height: 105%;
+  justify-content: space-between;
+  gap: 1vw;
+}
+
 .download-cv {
   display: flex;
   align-items: center;
