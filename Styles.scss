@@ -15,16 +15,37 @@ p {
   margin: 0;
   text-align: center;
 }
-
+h1{
+  font-family: variables.$my-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.9vw;
+  min-font-size: 19px;
+  line-height: 123.6%;
+  margin: 0;
+  text-align: left;
+}
 h4 {
   font-family: variables.$my-font;
   font-style: normal;
   font-weight: 500;
   font-size: 1.1vw;
+  min-font-size: 18px;
   line-height: 123.6%;
   margin: 0;
   text-align: center;
 }
+h6{
+  font-family: variables.$my-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.1vw;
+  min-font-size: 17px;
+  line-height: 123.6%;
+  margin: 0;
+  text-align: center;
+}
+
 
 .line {
   margin-top: 5%;
@@ -47,9 +68,6 @@ h4 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
-  div {
-  }
 
   p {
     margin-top: 5%;
@@ -259,6 +277,7 @@ h4 {
   width: 100%;
   align-items: flex-start;
   gap: 1vw;
+  margin-bottom: 5%;
 }
 
 .skill-logo {
@@ -267,17 +286,22 @@ h4 {
   width: 16%;
   max-width: 16%;
   align-items: flex-end;
-  max-height: 20%;
-  justify-content: space-between;
-  gap: 2vw;
+  max-height: 100%;
+  //justify-content: space-between;
+  gap: 3vw;
   //padding: 0vw;
-  margin-top: 0.2vw;
-  @media screen and (max-width: 1150px) {
+  margin-top: 0.4vw;
+  @media screen and (min-width: 480px) and (max-width: 1150px) {
     height: 1%;
     margin-left: 0.2vw;
     gap: 2.2vw;
   }
-
+  @media screen and (min-width: 0px) and (max-width: 480px) {
+    width: 50%;
+    height: 10%;
+    margin-left: 1vw;
+    gap: 2.2vw;
+  }
 }
 
 .skill-value {
@@ -285,7 +309,7 @@ h4 {
   flex-direction: column;
   width: 100%;
   align-items: flex-start;
-  height: 105%;
+  height: 100%;
   justify-content: space-between;
   gap: 1vw;
 }
@@ -315,209 +339,51 @@ h4 {
 }
 
 .intro {
+  height: 40%;
   background-color: variables.$parts-background;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1vw;
+  img{
+    height: 100%;
+  }
 }
-
-//.intro{
-//  background-color: variables.$parts-background;
-//  position: absolute;
-//  width: 970px;
-//  height: 531.9px;
-//  left: 335px;
-//  top: 0;
-//  img{
-//    position: absolute;
-//    width: 325.72px;
-//    height: 522.89px;
-//    left: 586.68px;
-//    top: 9.11px;
-//  }
-//  h6{
-//    position: absolute;
-//    width: 424px;
-//    height: 100.23px;
-//    left: 60px;
-//    top: 260.82px;
-//    margin: 0;
-//    font-family: variables.$my-font;
-//    text-transform: capitalize;
-//    font-weight: 400;
-//    line-height: 24px;
-//    font-size: 16px;
-//    color: variables.$paragraph-color;
-//  }
-//}
-//
-//
-//}
-//.languages {
-//  h4 {
-//    position: absolute;
-//    width: 95px;
-//    height: 22px;
-//    left: 40px;
-//    top: 557px;
-//  }
-//
-//  p {
-//    position: absolute;
-//    height: 24px;
-//    left: 40px;
-//  }
-//
-//  #persian {
-//    top: 594px;
-//  }
-//
-//  #english {
-//    top: 636px;
-//
-//  }
-//
-//  #spanish {
-//    top: 678px;
-//
-//  }
-//}
-//
-//
-//.languages-level {
-//  p {
-//    text-align: right;
-//    position: absolute;
-//    height: 24px;
-//    left: 222px;
-//  }
-//  #persian-lev {
-//    top: 594px;
-//  }
-//
-//  #english-lev {
-//    left: 219px;
-//    top: 636px;
-//  }
-//
-//  #spanish-lev {
-//    top: 678px;
-//  }
-//}
-//
-//
-//.contact {
-//  h4 {
-//    position: absolute;
-//    width: 173px;
-//    height: 22px;
-//    left: 40px;
-//    top: 768px;
-//  }
-//
-//  p {
-//    position: absolute;
-//    height: 24px;
-//    left: 37px;
-//  }
-//  #email{
-//    left: 40px;
-//    top: 829px;
-//  }
-//  #phone{
-//    top: 877px;
-//  }
-//  #telegram{
-//    top: 921px;
-//  }
-//  #skype{
-//    top: 964px;
-//  }
-//}
-//
-//.contact-value {
-//  p {
-//    text-align: right;
-//    position: absolute;
-//    height: 24px;
-//    left: 153px;
-//  }
-//  #email-val{
-//    text-decoration-line: underline;
-//    top: 824px;
-//  }
-//  #phone-val{
-//    top: 876px;
-//  }
-//  #telegram-val{
-//    left: 152px;
-//    top: 923px;
-//  }
-//  #skype-val{
-//    left: 152px;
-//    top: 964px;
-//  }
-//}
-//.skills{
-//  h4{
-//    position: absolute;
-//    left: 40px;
-//    top: 1052px;
-//  }
-//  p{
-//    position: absolute;
-//    height: 24px;
-//    left: 55px;
-//    margin-left: 15px;
-//  }
-//  span{
-//    position: absolute;
-//    width: 10px;
-//    height: 10px;
-//    box-sizing: border-box;
-//    border: 1px solid variables.$icon-color;
-//  }
-//  #rect-left-1{
-//    left: 40px;
-//    top: 1093px;
-//  }
-//  #rect-right-1{
-//    left: 45px;
-//    top: 1098px;
-//  }
-//  #rect-left-2{
-//    left: 40px;
-//    top: 1122px;
-//  }
-//  #rect-right-2{
-//    left: 45px;
-//    top: 1127px;
-//  }
-//  #rect-left-3{
-//    left: 40px;
-//    top: 1151px;
-//  }
-//  #rect-right-3{
-//    left: 45px;
-//    top: 1156px;
-//  }
-//  #rect-left-4{
-//    left: 40px;
-//    top: 1180px;
-//  }
-//  #rect-right-4{
-//    left: 45px;
-//    top: 1185px;
-//  }
-//
-//  #skill-1{
-//    top: 1089px;
-//  }
-//  #skill-2{
-//    top: 1118px;
-//  }
-//  #skill-3{
-//    top: 1147px;
-//  }
-//  #skill-4{
-//    top: 1176px;
-//  }
-//}
-//
+.text-intro{
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  alignment: left;
+  gap: 2.5vw;
+  margin-left: 4vw;
+  margin-top: 3vw;
+  img{
+    width: 30%;
+    margin-bottom: 1.5vw;
+  }
+  h1{
+    width: 80%;
+  }
+}
+#colored-text{
+  color: variables.$icon-color;
+}
+#intro-paragraph{
+  width: 70%;
+  height: 70%;
+  text-transform: capitalize;
+  color: variables.$paragraph-color;
+  text-align: left;
+  line-height: 1.75vw;
+}
+.photo-intro{
+  margin-right: 5vw;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}

@@ -14,11 +14,34 @@ p {
   text-align: center;
 }
 
+h1 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.9vw;
+  min-font-size: 19px;
+  line-height: 123.6%;
+  margin: 0;
+  text-align: left;
+}
+
 h4 {
   font-family: Inter;
   font-style: normal;
   font-weight: 500;
   font-size: 1.1vw;
+  min-font-size: 18px;
+  line-height: 123.6%;
+  margin: 0;
+  text-align: center;
+}
+
+h6 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.1vw;
+  min-font-size: 17px;
   line-height: 123.6%;
   margin: 0;
   text-align: center;
@@ -241,6 +264,7 @@ h4 {
   width: 100%;
   align-items: flex-start;
   gap: 1vw;
+  margin-bottom: 5%;
 }
 
 .skill-logo {
@@ -249,15 +273,22 @@ h4 {
   width: 16%;
   max-width: 16%;
   align-items: flex-end;
-  max-height: 20%;
-  justify-content: space-between;
-  gap: 2vw;
-  margin-top: 0.2vw;
+  max-height: 100%;
+  gap: 3vw;
+  margin-top: 0.4vw;
 }
-@media screen and (max-width: 1150px) {
+@media screen and (min-width: 480px) and (max-width: 1150px) {
   .skill-logo {
     height: 1%;
     margin-left: 0.2vw;
+    gap: 2.2vw;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  .skill-logo {
+    width: 50%;
+    height: 10%;
+    margin-left: 1vw;
     gap: 2.2vw;
   }
 }
@@ -267,7 +298,7 @@ h4 {
   flex-direction: column;
   width: 100%;
   align-items: flex-start;
-  height: 105%;
+  height: 100%;
   justify-content: space-between;
   gap: 1vw;
 }
@@ -295,7 +326,57 @@ h4 {
 }
 
 .intro {
+  height: 40%;
   background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1vw;
+}
+.intro img {
+  height: 100%;
+}
+
+.text-intro {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  alignment: left;
+  gap: 2.5vw;
+  margin-left: 4vw;
+  margin-top: 3vw;
+}
+.text-intro img {
+  width: 30%;
+  margin-bottom: 1.5vw;
+}
+.text-intro h1 {
+  width: 80%;
+}
+
+#colored-text {
+  color: #FFB400;
+}
+
+#intro-paragraph {
+  width: 70%;
+  height: 70%;
+  text-transform: capitalize;
+  color: #767676;
+  text-align: left;
+  line-height: 1.75vw;
+}
+
+.photo-intro {
+  margin-right: 5vw;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=Styles.css.map */
