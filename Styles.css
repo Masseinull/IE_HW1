@@ -75,7 +75,7 @@ h6 {
   background-color: white;
   width: 20%;
   left: 0;
-  height: 50%;
+  height: 80%;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -150,6 +150,7 @@ h6 {
 }
 .information-value p {
   color: #2B2B2B;
+  padding: 2%;
 }
 
 #freelance-value {
@@ -201,6 +202,9 @@ h6 {
   height: 100%;
   justify-content: space-between;
 }
+.languages-level p {
+  margin: 0;
+}
 
 .contact-header {
   display: flex;
@@ -210,12 +214,12 @@ h6 {
   margin-bottom: 1vw;
   width: 100%;
 }
+.contact-header h3 {
+  width: 33%;
+}
 .contact-header h4 {
   width: 100%;
   height: 100%;
-}
-.contact-header h3 {
-  width: 33%;
 }
 @media screen and (max-width: 800px) {
   .contact-header {
@@ -241,6 +245,10 @@ h6 {
   height: 100%;
   justify-content: space-between;
 }
+.contact-field p {
+  margin: 0;
+  padding: 10%;
+}
 
 .contact-value {
   display: flex;
@@ -248,7 +256,10 @@ h6 {
   width: 100%;
   align-items: flex-start;
   height: 100%;
-  justify-content: space-between;
+}
+.contact-value p {
+  margin: 0;
+  padding: 7%;
 }
 
 .skills-header {
@@ -486,7 +497,7 @@ h6 {
   text-transform: capitalize;
 }
 
-.education {
+.education-work {
   height: 25%;
   display: flex;
   flex-direction: column;
@@ -495,20 +506,20 @@ h6 {
   align-items: center;
 }
 
-.education-header {
+.education-work-header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   gap: 1vw;
 }
-.education-header p {
+.education-work-header p {
   width: 46%;
   text-transform: capitalize;
   margin-bottom: 1.5vw;
 }
 
-.education-box {
+.education-work-box {
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -519,7 +530,7 @@ h6 {
   justify-content: space-between;
 }
 
-.education-1 {
+.education-work-1 {
   width: 80%;
   display: flex;
   flex-direction: row;
@@ -527,7 +538,7 @@ h6 {
   align-items: center;
 }
 
-.education-2 {
+.education-work-2 {
   width: 80%;
   display: flex;
   flex-direction: row;
@@ -535,7 +546,7 @@ h6 {
   align-items: center;
 }
 
-.education-3 {
+.education-work-3 {
   width: 80%;
   display: flex;
   flex-direction: row;
@@ -543,7 +554,7 @@ h6 {
   align-items: center;
 }
 
-.education-title {
+.education-work-title {
   margin-bottom: 4.5vw;
   width: 60%;
   display: flex;
@@ -553,13 +564,13 @@ h6 {
   gap: 1.5vw;
 }
 
-.education-position {
+.education-work-position {
   display: flex;
   flex-direction: row;
   width: 80%;
 }
 
-.education-info {
+.education-work-info {
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -567,7 +578,7 @@ h6 {
   justify-content: space-between;
   gap: 1.5vw;
 }
-.education-info p {
+.education-work-info p {
   text-align: left;
   text-transform: capitalize;
 }
