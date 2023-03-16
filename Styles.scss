@@ -78,7 +78,7 @@ h6 {
   background-color: variables.$parts-background;
   width: 20%;
   left: 0;
-  height: 50%;
+  height: 80%;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -168,6 +168,7 @@ h6 {
 
   p {
     color: variables.$black;
+    padding: 2%;
   }
 }
 
@@ -221,10 +222,32 @@ h6 {
   align-items: flex-start;
   height: 100%;
   justify-content: space-between;
+  p{
+    margin: 0;
+  }
 }
 
 
 .contact-header {
+  //display: flex;
+  //flex-direction: row;
+  //justify-content: space-between;
+  //gap: 1vw;
+  //margin-bottom: 1vw;
+  //width: 100%;
+  //
+  //h4 {
+  //  width: 100%;
+  //  height: 100%;
+  //}
+  //
+  h3 {
+    width: 33%;
+  }
+  //
+  //@media screen and (max-width: 800px) {
+  //  margin-bottom: 0.1vw;
+  //}
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -235,10 +258,6 @@ h6 {
   h4 {
     width: 100%;
     height: 100%;
-  }
-
-  h3 {
-    width: 33%;
   }
 
   @media screen and (max-width: 800px) {
@@ -265,6 +284,10 @@ h6 {
   align-items: flex-start;
   height: 100%;
   justify-content: space-between;
+  p{
+    margin: 0;
+    padding: 10%;
+  }
 }
 
 .contact-value {
@@ -273,7 +296,11 @@ h6 {
   width: 100%;
   align-items: flex-start;
   height: 100%;
-  justify-content: space-between;
+  //justify-content: space-between;
+  p{
+    margin: 0;
+    padding: 7%;
+  }
 }
 
 .skills-header {
@@ -515,7 +542,7 @@ p{
   text-transform: capitalize;
 }
 
-.education {
+.education-work {
   height: 25%;
   display: flex;
   flex-direction: column;
@@ -524,7 +551,7 @@ p{
   align-items: center;
 }
 
-.education-header {
+.education-work-header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -538,7 +565,7 @@ p{
   }
 }
 
-.education-box {
+.education-work-box {
   background-color: variables.$parts-background;
   display: flex;
   flex-direction: column;
@@ -550,7 +577,7 @@ p{
   //gap: 0.1vw;
 }
 
-.education-1 {
+.education-work-1 {
   width: 80%;
   display: flex;
   flex-direction: row;
@@ -558,7 +585,7 @@ p{
   align-items: center;
 }
 
-.education-2 {
+.education-work-2 {
   width: 80%;
   display: flex;
   flex-direction: row;
@@ -566,7 +593,7 @@ p{
   align-items: center;
 }
 
-.education-3 {
+.education-work-3 {
   width: 80%;
   display: flex;
   flex-direction: row;
@@ -574,7 +601,7 @@ p{
   align-items: center;
 }
 
-.education-title {
+.education-work-title {
   margin-bottom: 4.5vw;
   width: 60%;
   display: flex;
@@ -584,13 +611,13 @@ p{
   gap: 1.5vw;
 }
 
-.education-position {
+.education-work-position {
   display: flex;
   flex-direction: row;
   width: 80%;
 }
 
-.education-info {
+.education-work-info {
   width: 80%;
   display: flex;
   flex-direction: column;
