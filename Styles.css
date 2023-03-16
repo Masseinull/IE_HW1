@@ -75,6 +75,7 @@ h6 {
   background-color: white;
   width: 20%;
   left: 0;
+  height: 50%;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -281,26 +282,25 @@ h6 {
 .skill-logo {
   display: flex;
   flex-direction: column;
-  width: 16%;
-  max-width: 16%;
-  align-items: flex-end;
-  max-height: 100%;
-  gap: 3vw;
-  margin-top: 0.4vw;
+  width: 10%;
+  align-items: flex-start;
+  height: 100%;
+  gap: 1.5vw;
+  margin-left: 2vw;
 }
 @media screen and (min-width: 480px) and (max-width: 1150px) {
   .skill-logo {
     height: 1%;
-    margin-left: 0.2vw;
-    gap: 2.2vw;
+    margin-left: 1vw;
+    gap: 2vw;
   }
 }
 @media screen and (min-width: 0px) and (max-width: 480px) {
   .skill-logo {
     width: 50%;
-    height: 10%;
+    height: 5%;
     margin-left: 1vw;
-    gap: 2.2vw;
+    gap: 2vw;
   }
 }
 
@@ -311,7 +311,28 @@ h6 {
   align-items: flex-start;
   height: 100%;
   justify-content: space-between;
-  gap: 1vw;
+  gap: 0.7vw;
+}
+.skill-value p {
+  margin-top: 0;
+}
+@media screen and (min-width: 870px) and (max-width: 1150px) {
+  .skill-value {
+    height: 1%;
+    gap: 2vw;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 870px) {
+  .skill-value {
+    height: 5%;
+    gap: 3vw;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  .skill-value {
+    height: 5%;
+    gap: 4vw;
+  }
 }
 
 .download-cv {
@@ -336,7 +357,7 @@ h6 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 4vw;
+  gap: 5vw;
   margin-right: 1vw;
 }
 
@@ -407,6 +428,7 @@ h6 {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  gap: 1vw;
 }
 .my-services p {
   width: 46%;
@@ -462,6 +484,107 @@ h6 {
 #advertisement {
   max-width: 80%;
   text-transform: capitalize;
+}
+
+.education {
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1vw;
+  align-items: center;
+}
+
+.education-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1vw;
+}
+.education-header p {
+  width: 46%;
+  text-transform: capitalize;
+  margin-bottom: 1.5vw;
+}
+
+.education-box {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 77%;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  justify-content: space-between;
+}
+
+.education-1 {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.education-2 {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.education-3 {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.education-title {
+  margin-bottom: 4.5vw;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.5vw;
+}
+
+.education-position {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+}
+
+.education-info {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.5vw;
+}
+.education-info p {
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.position {
+  width: 20%;
+  color: #2B2B2B;
+  text-align: left;
+}
+
+.duration {
+  width: 40%;
+  line-height: 1vw;
+  font-size: 0.7vw;
+  color: white;
+  padding: 0.1vw;
+  background-color: #FFB400;
 }
 
 /*# sourceMappingURL=Styles.css.map */
