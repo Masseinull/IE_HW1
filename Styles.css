@@ -397,7 +397,7 @@ h6 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 3vw;
+  gap: 1vw;
   align-items: center;
 }
 
@@ -406,11 +406,11 @@ h6 {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: 2vw;
 }
 .my-services p {
   width: 46%;
   text-transform: capitalize;
+  margin-bottom: 1.5vw;
 }
 
 .box-services-1 {
@@ -419,6 +419,7 @@ h6 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 1vw;
 }
 
 .box-services-2 {
@@ -427,12 +428,39 @@ h6 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 1vw;
 }
 
 .skill-box {
+  padding: 1.5vw;
+  display: flex;
+  flex-direction: column;
   background-color: white;
   width: 30%;
   height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1vw;
+}
+.skill-box img {
+  width: 30%;
+}
+.skill-box span {
+  font-family: "Roboto", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.8vw;
+  min-font-size: 10px;
+  line-height: 1.1vw;
+  color: #FFB400;
+}
+.skill-box a {
+  padding: 0.15vw;
+}
+
+#advertisement {
+  max-width: 80%;
+  text-transform: capitalize;
 }
 
 /*# sourceMappingURL=Styles.css.map */
