@@ -7,9 +7,9 @@ p {
   color: #767676;
   font-style: normal;
   font-weight: 400;
-  font-size: 0.8vw;
+  font-size: 0.9vw;
   min-font-size: 15px;
-  line-height: 1vw;
+  line-height: 1.5vw;
   margin: 0;
   text-align: center;
 }
@@ -19,10 +19,21 @@ h1 {
   font-style: normal;
   font-weight: 700;
   font-size: 2.9vw;
-  min-font-size: 19px;
+  min-font-size: 20px;
   line-height: 123.6%;
   margin: 0;
   text-align: left;
+}
+
+h2 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2vw;
+  min-font-size: 19px;
+  line-height: 123.6%;
+  margin: 0;
+  text-align: center;
 }
 
 h4 {
@@ -320,13 +331,16 @@ h6 {
 }
 
 .main-items {
+  height: 100%;
   width: 70%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  gap: 4vw;
 }
 
 .intro {
-  height: 40%;
+  height: 18%;
   background-color: white;
   display: flex;
   flex-direction: row;
@@ -368,7 +382,6 @@ h6 {
   text-transform: capitalize;
   color: #767676;
   text-align: left;
-  line-height: 1.75vw;
 }
 
 .photo-intro {
@@ -377,6 +390,77 @@ h6 {
   height: 100%;
   display: flex;
   flex-direction: column;
+}
+
+.services {
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1vw;
+  align-items: center;
+}
+
+.my-services {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.my-services p {
+  width: 46%;
+  text-transform: capitalize;
+  margin-bottom: 1.5vw;
+}
+
+.box-services-1 {
+  width: 100%;
+  height: 35%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1vw;
+}
+
+.box-services-2 {
+  width: 100%;
+  height: 35%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1vw;
+}
+
+.skill-box {
+  padding: 1.5vw;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 30%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1vw;
+}
+.skill-box img {
+  width: 30%;
+}
+.skill-box span {
+  font-family: "Roboto", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.8vw;
+  min-font-size: 10px;
+  line-height: 1.1vw;
+  color: #FFB400;
+}
+.skill-box a {
+  padding: 0.15vw;
+}
+
+#advertisement {
+  max-width: 80%;
+  text-transform: capitalize;
 }
 
 /*# sourceMappingURL=Styles.css.map */
