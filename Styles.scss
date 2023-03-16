@@ -118,21 +118,20 @@ h6 {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  //gap: 1.3vw;
+  gap: 0.3vw;
 
   img {
     width: 100%;
     height: 100%;
   }
 }
-
 .social-media > span {
-  margin: 0.5vw;
+  margin: 0.7vw;
   background-color: variables.$icon-color;
-  border-radius: 100%;
+  border-radius: 50%;
   padding: 0.3vw;
-  width: 50%;
-  height: 50%;
+  width: 60%;
+  height: 60%;
 }
 
 .information {
@@ -199,7 +198,7 @@ h6 {
   flex-direction: row;
   justify-content: space-between;
   //align-items: flex-start;
-  gap: 10vw;
+  gap: 9vw;
 
   p {
     padding: 10%;
@@ -222,55 +221,47 @@ h6 {
   align-items: flex-start;
   height: 100%;
   justify-content: space-between;
-  p{
+
+  p {
     margin: 0;
   }
 }
 
 
 .contact-header {
-  //display: flex;
-  //flex-direction: row;
-  //justify-content: space-between;
-  //gap: 1vw;
-  //margin-bottom: 1vw;
-  //width: 100%;
-  //
-  //h4 {
-  //  width: 100%;
-  //  height: 100%;
-  //}
-  //
-  h3 {
-    width: 33%;
-  }
-  //
-  //@media screen and (max-width: 800px) {
-  //  margin-bottom: 0.1vw;
-  //}
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   gap: 1vw;
-  margin-bottom: 1vw;
   width: 100%;
+  margin-bottom: 1vw;
 
   h4 {
     width: 100%;
     height: 100%;
+
   }
+
+  //
+  //h3 {
+  //  width: 33%;
+  //}
 
   @media screen and (max-width: 800px) {
     margin-bottom: 0.1vw;
   }
 }
 
+#empty {
+  width: 35%;
+}
+
 .contact {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  //align-items: flex-start;
-  gap: 7vw;
+  align-items: flex-start;
+  gap: 6vw;
 
   p {
     padding: 10%;
@@ -284,7 +275,8 @@ h6 {
   align-items: flex-start;
   height: 100%;
   justify-content: space-between;
-  p{
+
+  p {
     margin: 0;
     padding: 10%;
   }
@@ -293,13 +285,14 @@ h6 {
 .contact-value {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  //width: 100%;
   align-items: flex-start;
-  height: 100%;
-  //justify-content: space-between;
-  p{
+  //height: 100%;
+  justify-content: space-between;
+
+  p {
     margin: 0;
-    padding: 7%;
+    padding: 5%;
   }
 }
 
@@ -348,7 +341,7 @@ h6 {
     gap: 2vw;
   }
   @media screen and (min-width: 0px) and (max-width: 480px) {
-    width: 50%;
+    width: 10%;
     height: 5%;
     margin-left: 1vw;
     gap: 2vw;
@@ -363,9 +356,16 @@ h6 {
   height: 100%;
   justify-content: space-between;
   gap: 0.7vw;
-p{
-  margin-top: 0;
-}
+
+  p {
+    margin-top: 0;
+  }
+
+  @media screen and (min-width: 1150px) and (max-width: 1600px) {
+    height: 1%;
+    margin-left: 1vw;
+    gap: 1vw;
+  }
   @media screen and (min-width: 870px) and (max-width: 1150px) {
     height: 1%;
     gap: 2vw;
@@ -624,18 +624,21 @@ p{
   align-items: flex-start;
   justify-content: space-between;
   gap: 1.5vw;
+
   p {
     text-align: left;
     text-transform: capitalize;
   }
 
 }
-.position{
+
+.position {
   width: 20%;
   color: variables.$black;
   text-align: left;
 }
-.duration{
+
+.duration {
   width: 40%;
   line-height: 1vw;
   font-size: 0.7vw;
