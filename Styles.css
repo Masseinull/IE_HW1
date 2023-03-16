@@ -337,6 +337,7 @@ h6 {
   flex-direction: column;
   justify-content: space-between;
   gap: 4vw;
+  margin-right: 1vw;
 }
 
 .intro {
@@ -431,7 +432,7 @@ h6 {
   gap: 1vw;
 }
 
-.skill-box {
+.service-box {
   padding: 1.5vw;
   display: flex;
   flex-direction: column;
@@ -442,10 +443,10 @@ h6 {
   justify-content: space-between;
   gap: 1vw;
 }
-.skill-box img {
+.service-box img {
   width: 30%;
 }
-.skill-box span {
+.service-box span {
   font-family: "Roboto", serif;
   font-style: normal;
   font-weight: 700;
@@ -454,7 +455,7 @@ h6 {
   line-height: 1.1vw;
   color: #FFB400;
 }
-.skill-box a {
+.service-box a {
   padding: 0.15vw;
 }
 
