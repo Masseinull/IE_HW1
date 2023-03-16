@@ -15,7 +15,8 @@ p {
   margin: 0;
   text-align: center;
 }
-h1{
+
+h1 {
   font-family: variables.$my-font;
   font-style: normal;
   font-weight: 700;
@@ -25,7 +26,8 @@ h1{
   margin: 0;
   text-align: left;
 }
-h2{
+
+h2 {
   font-family: variables.$my-font;
   font-style: normal;
   font-weight: 700;
@@ -35,6 +37,7 @@ h2{
   margin: 0;
   text-align: center;
 }
+
 h4 {
   font-family: variables.$my-font;
   font-style: normal;
@@ -45,7 +48,8 @@ h4 {
   margin: 0;
   text-align: center;
 }
-h6{
+
+h6 {
   font-family: variables.$my-font;
   font-style: normal;
   font-weight: 400;
@@ -74,6 +78,7 @@ h6{
   background-color: variables.$parts-background;
   width: 20%;
   left: 0;
+  height: 50%;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -177,10 +182,12 @@ h6{
   gap: 1vw;
   margin-bottom: 1vw;
   width: 100%;
+
   h4 {
     width: 100%;
     height: 100%;
   }
+
   @media screen and (max-width: 800px) {
     margin-bottom: 0.1vw;
   }
@@ -192,7 +199,8 @@ h6{
   justify-content: space-between;
   //align-items: flex-start;
   gap: 10vw;
-  p{
+
+  p {
     padding: 10%;
   }
 }
@@ -223,13 +231,16 @@ h6{
   gap: 1vw;
   margin-bottom: 1vw;
   width: 100%;
+
   h4 {
     width: 100%;
     height: 100%;
   }
-  h3{
+
+  h3 {
     width: 33%;
   }
+
   @media screen and (max-width: 800px) {
     margin-bottom: 0.1vw;
   }
@@ -241,7 +252,8 @@ h6{
   justify-content: space-between;
   //align-items: flex-start;
   gap: 7vw;
-  p{
+
+  p {
     padding: 10%;
   }
 }
@@ -271,10 +283,12 @@ h6{
   gap: 7vw;
   margin-bottom: 1vw;
   width: 100%;
+
   h4 {
     width: 100%;
     height: 100%;
   }
+
   @media screen and (max-width: 800px) {
     margin-bottom: 0.1vw;
   }
@@ -293,24 +307,24 @@ h6{
 .skill-logo {
   display: flex;
   flex-direction: column;
-  width: 16%;
-  max-width: 16%;
-  align-items: flex-end;
-  max-height: 100%;
+  width: 10%;
+  //max-width: 100%;
+  align-items: flex-start;
+  height: 100%;
   //justify-content: space-between;
-  gap: 3vw;
+  gap: 1.5vw;
   //padding: 0vw;
-  margin-top: 0.4vw;
+  margin-left: 2vw;
   @media screen and (min-width: 480px) and (max-width: 1150px) {
     height: 1%;
-    margin-left: 0.2vw;
-    gap: 2.2vw;
+    margin-left: 1vw;
+    gap: 2vw;
   }
   @media screen and (min-width: 0px) and (max-width: 480px) {
     width: 50%;
-    height: 10%;
+    height: 5%;
     margin-left: 1vw;
-    gap: 2.2vw;
+    gap: 2vw;
   }
 }
 
@@ -321,7 +335,22 @@ h6{
   align-items: flex-start;
   height: 100%;
   justify-content: space-between;
-  gap: 1vw;
+  gap: 0.7vw;
+p{
+  margin-top: 0;
+}
+  @media screen and (min-width: 870px) and (max-width: 1150px) {
+    height: 1%;
+    gap: 2vw;
+  }
+  @media screen and (min-width: 480px) and (max-width: 870px) {
+    height: 5%;
+    gap: 3vw;
+  }
+  @media screen and (min-width: 0px) and (max-width: 480px) {
+    height: 5%;
+    gap: 4vw;
+  }
 }
 
 .download-cv {
@@ -348,7 +377,7 @@ h6{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 4vw;
+  gap: 5vw;
   margin-right: 1vw;
 }
 
@@ -360,11 +389,13 @@ h6{
   justify-content: space-between;
   align-items: flex-start;
   gap: 1vw;
-  img{
+
+  img {
     height: 100%;
   }
 }
-.text-intro{
+
+.text-intro {
   width: 80%;
   height: 80%;
   display: flex;
@@ -375,32 +406,38 @@ h6{
   gap: 2.5vw;
   margin-left: 4vw;
   margin-top: 3vw;
-  img{
+
+  img {
     width: 30%;
     margin-bottom: 1.5vw;
   }
-  h1{
+
+  h1 {
     width: 80%;
   }
 }
-#colored-text{
+
+#colored-text {
   color: variables.$icon-color;
 }
-#intro-paragraph{
+
+#intro-paragraph {
   width: 70%;
   height: 70%;
   text-transform: capitalize;
   color: variables.$paragraph-color;
   text-align: left;
 }
-.photo-intro{
+
+.photo-intro {
   margin-right: 5vw;
   width: 40%;
   height: 100%;
   display: flex;
   flex-direction: column;
 }
-.services{
+
+.services {
   height: 25%;
   display: flex;
   flex-direction: column;
@@ -409,18 +446,22 @@ h6{
   align-items: center;
 
 }
-.my-services{
+
+.my-services {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  p{
+  gap: 1vw;
+
+  p {
     width: 46%;
     text-transform: capitalize;
     margin-bottom: 1.5vw;
   }
 }
-.box-services-1{
+
+.box-services-1 {
   width: 100%;
   height: 35%;
   display: flex;
@@ -428,7 +469,8 @@ h6{
   justify-content: space-between;
   gap: 1vw;
 }
-.box-services-2{
+
+.box-services-2 {
   width: 100%;
   height: 35%;
   display: flex;
@@ -436,7 +478,8 @@ h6{
   justify-content: space-between;
   gap: 1vw;
 }
-.service-box{
+
+.service-box {
   padding: 1.5vw;
   display: flex;
   flex-direction: column;
@@ -446,10 +489,12 @@ h6{
   align-items: center;
   justify-content: space-between;
   gap: 1vw;
-  img{
+
+  img {
     width: 30%;
   }
-  span{
+
+  span {
     font-family: 'Roboto', serif;
     font-style: normal;
     font-weight: 700;
@@ -458,12 +503,116 @@ h6{
     line-height: 1.1vw;
     color: variables.$icon-color;
   }
-  a{
+
+  a {
     padding: 0.15vw;
 
   }
 }
-#advertisement{
+
+#advertisement {
   max-width: 80%;
   text-transform: capitalize;
+}
+
+.education {
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1vw;
+  align-items: center;
+}
+
+.education-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1vw;
+
+  p {
+    width: 46%;
+    text-transform: capitalize;
+    margin-bottom: 1.5vw;
+  }
+}
+
+.education-box {
+  background-color: variables.$parts-background;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 77%;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  justify-content: space-between;
+  //gap: 0.1vw;
+}
+
+.education-1 {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.education-2 {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.education-3 {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.education-title {
+  margin-bottom: 4.5vw;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.5vw;
+}
+
+.education-position {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+}
+
+.education-info {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.5vw;
+  p {
+    text-align: left;
+    text-transform: capitalize;
+  }
+
+}
+.position{
+  width: 20%;
+  color: variables.$black;
+  text-align: left;
+}
+.duration{
+  width: 40%;
+  line-height: 1vw;
+  font-size: 0.7vw;
+  color: variables.$parts-background;
+  padding: 0.1vw;
+  background-color: variables.$icon-color;
 }
