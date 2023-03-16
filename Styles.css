@@ -95,7 +95,22 @@ h6 {
 }
 .profile-image img {
   margin-top: 1vw;
-  width: 80%;
+  width: 110%;
+}
+@media screen and (min-width: 1000px) and (max-width: 1300px) {
+  .profile-image img {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 1000px) {
+  .profile-image img {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 10px) and (max-width: 500px) {
+  .profile-image img {
+    width: 30%;
+  }
 }
 
 .social-media {
