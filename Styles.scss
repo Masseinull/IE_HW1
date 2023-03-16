@@ -97,7 +97,7 @@ h6 {
   display: flex;
   align-items: center;
   flex-direction: column;
-
+  position: relative;
   img {
     margin-top: 1vw;
     width: 110%;
@@ -111,15 +111,31 @@ h6 {
       width: 30%;
     }
   }
+  span {
+    position: absolute;
+    top: 80%;
+    left: 80%;
+    z-index: 1;
+    height: 1vw;
+    width: 1vw;
+    background-color: variables.$green;
+    border-radius: 100%;
+    @media screen and (min-width: 1300px) and (max-width: 1800px) {
+      left: 85%;
+    }
+    @media screen and (min-width: 1000px) and (max-width: 1300px) {
+      left: 75%;
+    }
+    @media screen and (min-width: 500px) and (max-width: 1000px) {
+      left: 70%;
+    }
+    @media screen and (min-width: 10px) and (max-width: 500px) {
+      left: 60%;
+    }
+  }
 }
 
-//#available {
-//  position: absolute;
-//  width: 40%;
-//  height: 40%;
-//  top: 1vw;
-//  left: 1vw;
-//}
+
 
 .social-media {
   margin-top: 5%;
