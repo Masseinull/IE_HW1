@@ -81,6 +81,11 @@ h6 {
   flex-direction: column;
   justify-content: space-between;
 }
+@media screen and (max-width: 900px) {
+  .sidebar {
+    width: 30%;
+  }
+}
 .sidebar p {
   margin-top: 5%;
 }
@@ -425,6 +430,11 @@ h6 {
   justify-content: space-between;
   gap: 5vw;
   margin-right: 1vw;
+}
+@media screen and (max-width: 900px) {
+  .main-items {
+    width: 60%;
+  }
 }
 
 .intro {
