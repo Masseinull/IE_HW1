@@ -561,6 +561,12 @@ h6 {
   max-width: 80%;
   text-transform: capitalize;
 }
+@media screen and (max-width: 900px) {
+  #advertisement {
+    font-size: 0.8vw;
+    line-height: 0.9vw;
+  }
+}
 
 .education-work {
   height: 25%;
@@ -653,6 +659,11 @@ h6 {
   color: #2B2B2B;
   text-align: left;
 }
+@media screen and (max-width: 900px) {
+  .position {
+    width: 30%;
+  }
+}
 
 .duration {
   width: 40%;
@@ -661,6 +672,11 @@ h6 {
   color: white;
   padding: 0.1vw;
   background-color: #FFB400;
+}
+@media screen and (max-width: 900px) {
+  .duration {
+    width: 50%;
+  }
 }
 
 /*# sourceMappingURL=Styles.css.map */

@@ -570,6 +570,10 @@ h6 {
 #advertisement {
   max-width: 80%;
   text-transform: capitalize;
+  @media screen and (max-width: 900px) {
+    font-size: 0.8vw;
+    line-height: 0.9vw;
+  }
 }
 
 .education-work {
@@ -666,6 +670,9 @@ h6 {
   width: 20%;
   color: variables.$black;
   text-align: left;
+  @media screen and (max-width: 900px){
+    width: 30%;
+  }
 }
 
 .duration {
@@ -675,4 +682,7 @@ h6 {
   color: variables.$parts-background;
   padding: 0.1vw;
   background-color: variables.$icon-color;
+  @media screen and (max-width: 900px){
+    width: 50%;
+  }
 }
