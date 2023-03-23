@@ -1,12 +1,10 @@
-@use 'variables';
-
 body {
-  background-color: variables.$main-background;
+  background-color: #E5E5E5;
 }
 
 p {
-  font-family: variables.$my-font;
-  color: variables.$paragraph-color;
+  font-family: Inter;
+  color: #767676;
   font-style: normal;
   font-weight: 400;
   font-size: 0.9vw;
@@ -17,7 +15,7 @@ p {
 }
 
 h1 {
-  font-family: variables.$my-font;
+  font-family: Inter;
   font-style: normal;
   font-weight: 700;
   font-size: 2.9vw;
@@ -28,7 +26,7 @@ h1 {
 }
 
 h2 {
-  font-family: variables.$my-font;
+  font-family: Inter;
   font-style: normal;
   font-weight: 700;
   font-size: 2vw;
@@ -39,7 +37,7 @@ h2 {
 }
 
 h4 {
-  font-family: variables.$my-font;
+  font-family: Inter;
   font-style: normal;
   font-weight: 500;
   font-size: 1.1vw;
@@ -50,7 +48,7 @@ h4 {
 }
 
 h6 {
-  font-family: variables.$my-font;
+  font-family: Inter;
   font-style: normal;
   font-weight: 400;
   font-size: 1.1vw;
@@ -59,7 +57,6 @@ h6 {
   margin: 0;
   text-align: center;
 }
-
 
 .line {
   margin-top: 5%;
@@ -75,7 +72,7 @@ h6 {
 }
 
 .sidebar {
-  background-color: variables.$parts-background;
+  background-color: white;
   width: 20%;
   left: 0;
   height: 80%;
@@ -83,17 +80,17 @@ h6 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  @media screen and (max-width: 900px) {
+}
+@media screen and (max-width: 900px) {
+  .sidebar {
     width: 30%;
   }
-
-  p {
-    margin-top: 5%;
-  }
-
-  h4 {
-    margin-top: 5%;
-  }
+}
+.sidebar p {
+  margin-top: 5%;
+}
+.sidebar h4 {
+  margin-top: 5%;
 }
 
 .profile-image {
@@ -101,45 +98,56 @@ h6 {
   align-items: center;
   flex-direction: column;
   position: relative;
-
-  img {
-    margin-top: 1vw;
-    width: 110%;
-    @media screen and (min-width: 1000px) and (max-width: 1300px) {
-      width: 80%;
-    }
-    @media screen and (min-width: 500px) and (max-width: 1000px) {
-      width: 60%;
-    }
-    @media screen and (min-width: 10px) and (max-width: 500px) {
-      width: 30%;
-    }
-  }
-
-  span {
-    position: absolute;
-    top: 80%;
-    left: 80%;
-    z-index: 1;
-    height: 1vw;
-    width: 1vw;
-    background-color: variables.$green;
-    border-radius: 100%;
-    @media screen and (min-width: 1300px) and (max-width: 1800px) {
-      left: 85%;
-    }
-    @media screen and (min-width: 1000px) and (max-width: 1300px) {
-      left: 75%;
-    }
-    @media screen and (min-width: 500px) and (max-width: 1000px) {
-      left: 70%;
-    }
-    @media screen and (min-width: 10px) and (max-width: 500px) {
-      left: 60%;
-    }
+}
+.profile-image img {
+  margin-top: 1vw;
+  width: 110%;
+}
+@media screen and (min-width: 1000px) and (max-width: 1300px) {
+  .profile-image img {
+    width: 80%;
   }
 }
-
+@media screen and (min-width: 500px) and (max-width: 1000px) {
+  .profile-image img {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 10px) and (max-width: 500px) {
+  .profile-image img {
+    width: 30%;
+  }
+}
+.profile-image span {
+  position: absolute;
+  top: 80%;
+  left: 80%;
+  z-index: 1;
+  height: 1vw;
+  width: 1vw;
+  background-color: #7EB942;
+  border-radius: 100%;
+}
+@media screen and (min-width: 1300px) and (max-width: 1800px) {
+  .profile-image span {
+    left: 85%;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1300px) {
+  .profile-image span {
+    left: 75%;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 1000px) {
+  .profile-image span {
+    left: 70%;
+  }
+}
+@media screen and (min-width: 10px) and (max-width: 500px) {
+  .profile-image span {
+    left: 60%;
+  }
+}
 
 .social-media {
   margin-top: 5%;
@@ -148,16 +156,15 @@ h6 {
   justify-content: space-between;
   align-items: center;
   gap: 0.3vw;
-
-  img {
-    width: 100%;
-    height: 100%;
-  }
+}
+.social-media img {
+  width: 100%;
+  height: 100%;
 }
 
 .social-media > span {
   margin: 0.7vw;
-  background-color: variables.$icon-color;
+  background-color: #FFB400;
   border-radius: 50%;
   padding: 0.3vw;
   width: 60%;
@@ -168,7 +175,6 @@ h6 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  //align-items: flex-start;
   gap: 5vw;
 }
 
@@ -179,12 +185,11 @@ h6 {
   align-items: flex-start;
   height: 100%;
   justify-content: space-between;
-
-  p {
-    background-color: variables.$icon-color;
-    color: variables.$black;
-    padding: 5%;
-  }
+}
+.information-field p {
+  background-color: #FFB400;
+  color: #2B2B2B;
+  padding: 5%;
 }
 
 .information-value {
@@ -194,15 +199,14 @@ h6 {
   align-items: flex-end;
   height: 100%;
   justify-content: space-between;
-
-  p {
-    color: variables.$black;
-    padding: 2%;
-  }
+}
+.information-value p {
+  color: #2B2B2B;
+  padding: 2%;
 }
 
 #freelance-value {
-  color: variables.$green;
+  color: #7EB942;
 }
 
 .languages-header {
@@ -212,13 +216,13 @@ h6 {
   gap: 1vw;
   margin-bottom: 1vw;
   width: 100%;
-
-  h4 {
-    width: 100%;
-    height: 100%;
-  }
-
-  @media screen and (max-width: 800px) {
+}
+.languages-header h4 {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 800px) {
+  .languages-header {
     margin-bottom: 0.1vw;
   }
 }
@@ -227,12 +231,10 @@ h6 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  //align-items: flex-start;
   gap: 9vw;
-
-  p {
-    padding: 10%;
-  }
+}
+.languages p {
+  padding: 10%;
 }
 
 .languages-field {
@@ -251,12 +253,10 @@ h6 {
   align-items: flex-start;
   height: 100%;
   justify-content: space-between;
-
-  p {
-    margin: 0;
-  }
 }
-
+.languages-level p {
+  margin: 0;
+}
 
 .contact-header {
   display: flex;
@@ -265,19 +265,13 @@ h6 {
   gap: 1vw;
   width: 100%;
   margin-bottom: 1vw;
-
-  h4 {
-    width: 100%;
-    height: 100%;
-
-  }
-
-  //
-  //h3 {
-  //  width: 33%;
-  //}
-
-  @media screen and (max-width: 800px) {
+}
+.contact-header h4 {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 800px) {
+  .contact-header {
     margin-bottom: 0.1vw;
   }
 }
@@ -292,10 +286,9 @@ h6 {
   justify-content: space-between;
   align-items: flex-start;
   gap: 6vw;
-
-  p {
-    padding: 10%;
-  }
+}
+.contact p {
+  padding: 10%;
 }
 
 .contact-field {
@@ -305,25 +298,21 @@ h6 {
   align-items: flex-start;
   height: 100%;
   justify-content: space-between;
-
-  p {
-    margin: 0;
-    padding: 10%;
-  }
+}
+.contact-field p {
+  margin: 0;
+  padding: 10%;
 }
 
 .contact-value {
   display: flex;
   flex-direction: column;
-  //width: 100%;
   align-items: flex-start;
-  //height: 100%;
   justify-content: space-between;
-
-  p {
-    margin: 0;
-    padding: 5%;
-  }
+}
+.contact-value p {
+  margin: 0;
+  padding: 5%;
 }
 
 .skills-header {
@@ -333,13 +322,13 @@ h6 {
   gap: 7vw;
   margin-bottom: 1vw;
   width: 100%;
-
-  h4 {
-    width: 100%;
-    height: 100%;
-  }
-
-  @media screen and (max-width: 800px) {
+}
+.skills-header h4 {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 800px) {
+  .skills-header {
     margin-bottom: 0.1vw;
   }
 }
@@ -358,23 +347,26 @@ h6 {
   display: flex;
   flex-direction: column;
   width: 10%;
-  //max-width: 100%;
   align-items: flex-start;
   height: 100%;
-  //justify-content: space-between;
   gap: 2.2vw;
-  //padding: 0vw;
   margin-left: 2vw;
   margin-top: 1vw;
-  @media screen and (min-width: 1150px) and (max-width: 1600px) {
+}
+@media screen and (min-width: 1150px) and (max-width: 1600px) {
+  .skill-logo {
     gap: 2.2vw;
   }
-  @media screen and (min-width: 480px) and (max-width: 1150px) {
+}
+@media screen and (min-width: 480px) and (max-width: 1150px) {
+  .skill-logo {
     height: 1%;
     margin-left: 1vw;
     gap: 2.5vw;
   }
-  @media screen and (min-width: 0px) and (max-width: 480px) {
+}
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  .skill-logo {
     width: 10%;
     height: 5%;
     margin-left: 1vw;
@@ -390,25 +382,28 @@ h6 {
   height: 100%;
   justify-content: space-between;
   gap: 0.7vw;
-
-  p {
-    //margin-top: 0;
-  }
-
-  @media screen and (min-width: 1150px) and (max-width: 1600px) {
+}
+@media screen and (min-width: 1150px) and (max-width: 1600px) {
+  .skill-value {
     height: 1%;
     margin-left: 1vw;
     gap: 1vw;
   }
-  @media screen and (min-width: 870px) and (max-width: 1150px) {
+}
+@media screen and (min-width: 870px) and (max-width: 1150px) {
+  .skill-value {
     height: 1%;
     gap: 1.5vw;
   }
-  @media screen and (min-width: 480px) and (max-width: 870px) {
+}
+@media screen and (min-width: 480px) and (max-width: 870px) {
+  .skill-value {
     height: 5%;
     gap: 2.5vw;
   }
-  @media screen and (min-width: 0px) and (max-width: 480px) {
+}
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  .skill-value {
     margin-top: 1vw;
     gap: 3vw;
     margin-left: 2vw;
@@ -420,16 +415,14 @@ h6 {
   align-items: center;
   flex-direction: column;
   margin-bottom: 4%;
-
-  img {
-    width: 100%;
-  }
-
-  @media screen and (max-width: 1150px) {
-    img {
-      justify-items: center;
-      width: 80%;
-    }
+}
+.download-cv img {
+  width: 100%;
+}
+@media screen and (max-width: 1150px) {
+  .download-cv img {
+    justify-items: center;
+    width: 80%;
   }
 }
 
@@ -441,26 +434,29 @@ h6 {
   justify-content: space-between;
   gap: 5vw;
   margin-right: 1vw;
-  @media screen and (max-width: 900px) {
+}
+@media screen and (max-width: 900px) {
+  .main-items {
     width: 60%;
   }
 }
 
 .intro {
   height: 18%;
-  background-color: variables.$parts-background;
+  background-color: white;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
   gap: 1vw;
-
-  img {
+}
+.intro img {
+  height: 100%;
+}
+@media screen and (max-width: 900px) {
+  .intro img {
     height: 100%;
-    @media screen and (max-width: 900px) {
-      height: 100%;
-      width: 100%;
-    }
+    width: 100%;
   }
 }
 
@@ -475,33 +471,35 @@ h6 {
   gap: 2.5vw;
   margin-left: 4vw;
   margin-top: 3vw;
-  @media screen and (max-width: 1700px) {
+}
+@media screen and (max-width: 1700px) {
+  .text-intro {
     margin-top: 5vw;
     gap: 1vw;
   }
-
-  img {
-    width: 30%;
-    margin-bottom: 2.5vw;
-  }
-
-  h1 {
-    width: 80%;
-    @media screen and (max-width: 900px) {
-      font-size: 2vw;
-    }
+}
+.text-intro img {
+  width: 30%;
+  margin-bottom: 2.5vw;
+}
+.text-intro h1 {
+  width: 80%;
+}
+@media screen and (max-width: 900px) {
+  .text-intro h1 {
+    font-size: 2vw;
   }
 }
 
 #colored-text {
-  color: variables.$icon-color;
+  color: #FFB400;
 }
 
 #intro-paragraph {
   width: 70%;
   height: 70%;
   text-transform: capitalize;
-  color: variables.$paragraph-color;
+  color: #767676;
   text-align: left;
 }
 
@@ -515,8 +513,6 @@ h6 {
 
 .circle-orange-1 {
   position: absolute;
-  //top: 5%;
-  //left: 31%;
   top: 2vw;
   left: 31vw;
   width: 1vw;
@@ -525,16 +521,16 @@ h6 {
   border-radius: 50%;
   border-style: solid;
   border-width: 2px;
-  border-color: variables.$icon-color;
-  @media screen and (max-width: 900px) {
+  border-color: #FFB400;
+}
+@media screen and (max-width: 900px) {
+  .circle-orange-1 {
     left: 41%;
   }
 }
 
 .circle-green-1 {
   position: absolute;
-  //top: 8%;
-  //left: 61%;
   top: 3.5vw;
   left: 62vw;
   width: 1vw;
@@ -543,16 +539,16 @@ h6 {
   border-radius: 50%;
   border-style: solid;
   border-width: 2px;
-  border-color: variables.$lemon-green;
-  @media screen and (max-width: 900px) {
+  border-color: rgba(5, 255, 0, 0.8);
+}
+@media screen and (max-width: 900px) {
+  .circle-green-1 {
     left: 63%;
   }
 }
 
 .square-orange {
   position: absolute;
-  //top: 11%;
-  //left: 93%;
   top: 7vw;
   left: 93vw;
   width: 1vw;
@@ -560,15 +556,12 @@ h6 {
   z-index: 1;
   border-style: solid;
   border-width: 2px;
-  border-color: variables.$icon-color;
+  border-color: #FFB400;
   transform: matrix(0.87, 0.49, -0.39, 0.92, 0, 0);
-
 }
 
 .square-blue {
   position: absolute;
-  //top: 45%;
-  //left: 55%;
   top: 24vw;
   left: 55vw;
   width: 1vw;
@@ -576,9 +569,11 @@ h6 {
   z-index: 1;
   border-style: solid;
   border-width: 2px;
-  border-color: variables.$blue;
+  border-color: rgba(0, 71, 255, 0.8);
   transform: matrix(0.87, 0.49, -0.39, 0.92, 0, 0);
-  @media screen and (max-width: 900px) {
+}
+@media screen and (max-width: 900px) {
+  .square-blue {
     left: 60vw;
     top: 20vw;
   }
@@ -586,8 +581,6 @@ h6 {
 
 .circle-orange-2 {
   position: absolute;
-  //top: 5%;
-  //left: 31%;
   top: 26vw;
   left: 70vw;
   width: 1vw;
@@ -596,14 +589,20 @@ h6 {
   border-radius: 50%;
   border-style: solid;
   border-width: 2px;
-  border-color: variables.$icon-color;
-  @media screen and (max-width: 1500px) {
+  border-color: #FFB400;
+}
+@media screen and (max-width: 1500px) {
+  .circle-orange-2 {
     left: 67vw;
   }
-  @media screen and (max-width: 1300px) {
+}
+@media screen and (max-width: 1300px) {
+  .circle-orange-2 {
     left: 64vw;
   }
-  @media screen and (max-width: 900px) {
+}
+@media screen and (max-width: 900px) {
+  .circle-orange-2 {
     left: 72vw;
     top: 20vw;
   }
@@ -611,8 +610,6 @@ h6 {
 
 .circle-green-2 {
   position: absolute;
-  //top: 8%;
-  //left: 61%;
   top: 30vw;
   left: 35vw;
   width: 1vw;
@@ -621,8 +618,10 @@ h6 {
   border-radius: 50%;
   border-style: solid;
   border-width: 2px;
-  border-color: variables.$lemon-green;
-  @media screen and (max-width: 900px) {
+  border-color: rgba(5, 255, 0, 0.8);
+}
+@media screen and (max-width: 900px) {
+  .circle-green-2 {
     left: 45vw;
     top: 25vw;
   }
@@ -635,7 +634,6 @@ h6 {
   justify-content: space-between;
   gap: 1vw;
   align-items: center;
-
 }
 
 .my-services {
@@ -644,12 +642,11 @@ h6 {
   justify-content: space-between;
   align-items: center;
   gap: 1vw;
-
-  p {
-    width: 46%;
-    text-transform: capitalize;
-    margin-bottom: 1.5vw;
-  }
+}
+.my-services p {
+  width: 46%;
+  text-transform: capitalize;
+  margin-bottom: 1.5vw;
 }
 
 .box-services-1 {
@@ -674,37 +671,35 @@ h6 {
   padding: 1.5vw;
   display: flex;
   flex-direction: column;
-  background-color: variables.$parts-background;
+  background-color: white;
   width: 30%;
   height: 100%;
   align-items: center;
   justify-content: space-between;
   gap: 1vw;
-
-  img {
-    width: 30%;
-  }
-
-  span {
-    font-family: 'Roboto', serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 0.8vw;
-    min-font-size: 10px;
-    line-height: 1.1vw;
-    color: variables.$icon-color;
-  }
-
-  a {
-    padding: 0.15vw;
-
-  }
+}
+.service-box img {
+  width: 30%;
+}
+.service-box span {
+  font-family: "Roboto", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.8vw;
+  min-font-size: 10px;
+  line-height: 1.1vw;
+  color: #FFB400;
+}
+.service-box a {
+  padding: 0.15vw;
 }
 
 #advertisement {
   max-width: 80%;
   text-transform: capitalize;
-  @media screen and (max-width: 900px) {
+}
+@media screen and (max-width: 900px) {
+  #advertisement {
     font-size: 0.8vw;
     line-height: 0.9vw;
   }
@@ -725,16 +720,15 @@ h6 {
   justify-content: space-between;
   align-items: center;
   gap: 1vw;
-
-  p {
-    width: 46%;
-    text-transform: capitalize;
-    margin-bottom: 1.5vw;
-  }
+}
+.education-work-header p {
+  width: 46%;
+  text-transform: capitalize;
+  margin-bottom: 1.5vw;
 }
 
 .education-work-box {
-  background-color: variables.$parts-background;
+  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -742,7 +736,6 @@ h6 {
   padding-top: 2vw;
   padding-bottom: 2vw;
   justify-content: space-between;
-  //gap: 0.1vw;
 }
 
 .education-work-1 {
@@ -792,19 +785,19 @@ h6 {
   align-items: flex-start;
   justify-content: space-between;
   gap: 1.5vw;
-
-  p {
-    text-align: left;
-    text-transform: capitalize;
-  }
-
+}
+.education-work-info p {
+  text-align: left;
+  text-transform: capitalize;
 }
 
 .position {
   width: 20%;
-  color: variables.$black;
+  color: #2B2B2B;
   text-align: left;
-  @media screen and (max-width: 900px) {
+}
+@media screen and (max-width: 900px) {
+  .position {
     width: 30%;
   }
 }
@@ -813,10 +806,14 @@ h6 {
   width: 40%;
   line-height: 1vw;
   font-size: 0.7vw;
-  color: variables.$parts-background;
+  color: white;
   padding: 0.1vw;
-  background-color: variables.$icon-color;
-  @media screen and (max-width: 900px) {
+  background-color: #FFB400;
+}
+@media screen and (max-width: 900px) {
+  .duration {
     width: 50%;
   }
 }
+
+/*# sourceMappingURL=Styles.css.map */
