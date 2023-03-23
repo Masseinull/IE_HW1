@@ -83,9 +83,10 @@ h6 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  @media screen and (max-width: 900px){
+  @media screen and (max-width: 900px) {
     width: 30%;
   }
+
   p {
     margin-top: 5%;
   }
@@ -100,6 +101,7 @@ h6 {
   align-items: center;
   flex-direction: column;
   position: relative;
+
   img {
     margin-top: 1vw;
     width: 110%;
@@ -113,6 +115,7 @@ h6 {
       width: 30%;
     }
   }
+
   span {
     position: absolute;
     top: 80%;
@@ -138,7 +141,6 @@ h6 {
 }
 
 
-
 .social-media {
   margin-top: 5%;
   display: flex;
@@ -152,6 +154,7 @@ h6 {
     height: 100%;
   }
 }
+
 .social-media > span {
   margin: 0.7vw;
   background-color: variables.$icon-color;
@@ -433,7 +436,7 @@ h6 {
   justify-content: space-between;
   gap: 5vw;
   margin-right: 1vw;
-  @media screen and (max-width: 900px){
+  @media screen and (max-width: 900px) {
     width: 60%;
   }
 }
@@ -449,6 +452,10 @@ h6 {
 
   img {
     height: 100%;
+    @media screen and (max-width: 900px) {
+      height: 100%;
+      width: 100%;
+    }
   }
 }
 
@@ -463,14 +470,21 @@ h6 {
   gap: 2.5vw;
   margin-left: 4vw;
   margin-top: 3vw;
+  @media screen and (max-width: 1700px) {
+    margin-top: 5vw;
+    gap: 1vw;
+  }
 
   img {
     width: 30%;
-    margin-bottom: 1.5vw;
+    margin-bottom: 2.5vw;
   }
 
   h1 {
     width: 80%;
+    @media screen and (max-width: 900px) {
+      font-size: 2vw;
+    }
   }
 }
 
@@ -494,6 +508,139 @@ h6 {
   flex-direction: column;
 }
 
+.circle-orange-1 {
+  position: absolute;
+  //top: 5%;
+  //left: 31%;
+  top: 2vw;
+  left: 31vw;
+  width: 1vw;
+  height: 1vw;
+  z-index: 1;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: variables.$icon-color;
+  @media screen and (max-width: 900px) {
+    left: 41%;
+  }
+}
+
+.circle-green-1 {
+  position: absolute;
+  //top: 8%;
+  //left: 61%;
+  top: 3.5vw;
+  left: 62vw;
+  width: 1vw;
+  height: 1vw;
+  z-index: 1;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: variables.$lemon-green;
+  @media screen and (max-width: 900px) {
+    left: 63%;
+  }
+}
+
+.square-orange {
+  position: absolute;
+  //top: 11%;
+  //left: 93%;
+  top: 7vw;
+  left: 93vw;
+  width: 1vw;
+  height: 1vw;
+  z-index: 1;
+  border-style: solid;
+  border-width: 2px;
+  border-color: variables.$icon-color;
+  transform: matrix(0.87, 0.49, -0.39, 0.92, 0, 0);
+
+}
+
+.square-blue {
+  position: absolute;
+  //top: 45%;
+  //left: 55%;
+  top: 24vw;
+  left: 55vw;
+  width: 1vw;
+  height: 1vw;
+  z-index: 1;
+  border-style: solid;
+  border-width: 2px;
+  border-color: variables.$blue;
+  transform: matrix(0.87, 0.49, -0.39, 0.92, 0, 0);
+  @media screen and (max-width: 900px) {
+    left: 60vw;
+    top: 20vw;
+  }
+}
+
+.circle-orange-2 {
+  position: absolute;
+  //top: 5%;
+  //left: 31%;
+  top: 26vw;
+  left: 70vw;
+  width: 1vw;
+  height: 1vw;
+  z-index: 1;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: variables.$icon-color;
+  @media screen and (max-width: 1500px) {
+    left: 67vw;
+  }
+  @media screen and (max-width: 1300px) {
+    left: 64vw;
+  }
+  @media screen and (max-width: 900px) {
+    left: 72vw;
+    top: 20vw;
+  }
+}
+
+.circle-green-2 {
+  position: absolute;
+  //top: 8%;
+  //left: 61%;
+  top: 30vw;
+  left: 35vw;
+  width: 1vw;
+  height: 1vw;
+  z-index: 1;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: variables.$lemon-green;
+  @media screen and (max-width: 900px) {
+    left: 45vw;
+    top: 25vw;
+  }
+}
+
+//.triangle {
+//  position: relative;
+//  top: 8vw;
+//  left: 61vw;
+//  width: 0;
+//  border-bottom:solid 38px variables.$red;
+//  border-right:solid 25px transparent;
+//  border-left:solid 25px transparent;
+//}
+//.triangle .inside-triangle {
+//  position: absolute;
+//  top: 9px;
+//  left:-21px;
+//  width:0;
+//  border-bottom:solid 26px white;
+//  border-right:solid 19px transparent;
+//  border-left:solid 21px transparent;
+//}
 .services {
   height: 25%;
   display: flex;
@@ -670,7 +817,7 @@ h6 {
   width: 20%;
   color: variables.$black;
   text-align: left;
-  @media screen and (max-width: 900px){
+  @media screen and (max-width: 900px) {
     width: 30%;
   }
 }
@@ -682,7 +829,7 @@ h6 {
   color: variables.$parts-background;
   padding: 0.1vw;
   background-color: variables.$icon-color;
-  @media screen and (max-width: 900px){
+  @media screen and (max-width: 900px) {
     width: 50%;
   }
 }
