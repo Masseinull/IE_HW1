@@ -349,14 +349,20 @@ h6 {
   width: 10%;
   align-items: flex-start;
   height: 100%;
-  gap: 1.5vw;
+  gap: 2.2vw;
   margin-left: 2vw;
+  margin-top: 1vw;
+}
+@media screen and (min-width: 1150px) and (max-width: 1600px) {
+  .skill-logo {
+    gap: 2.2vw;
+  }
 }
 @media screen and (min-width: 480px) and (max-width: 1150px) {
   .skill-logo {
     height: 1%;
     margin-left: 1vw;
-    gap: 2vw;
+    gap: 2.5vw;
   }
 }
 @media screen and (min-width: 0px) and (max-width: 480px) {
@@ -377,9 +383,6 @@ h6 {
   justify-content: space-between;
   gap: 0.7vw;
 }
-.skill-value p {
-  margin-top: 0;
-}
 @media screen and (min-width: 1150px) and (max-width: 1600px) {
   .skill-value {
     height: 1%;
@@ -390,19 +393,20 @@ h6 {
 @media screen and (min-width: 870px) and (max-width: 1150px) {
   .skill-value {
     height: 1%;
-    gap: 2vw;
+    gap: 1.5vw;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 870px) {
   .skill-value {
     height: 5%;
-    gap: 3vw;
+    gap: 2.5vw;
   }
 }
 @media screen and (min-width: 0px) and (max-width: 480px) {
   .skill-value {
-    height: 5%;
-    gap: 4vw;
+    margin-top: 1vw;
+    gap: 3vw;
+    margin-left: 2vw;
   }
 }
 

@@ -362,13 +362,17 @@ h6 {
   align-items: flex-start;
   height: 100%;
   //justify-content: space-between;
-  gap: 1.5vw;
+  gap: 2.2vw;
   //padding: 0vw;
   margin-left: 2vw;
+  margin-top: 1vw;
+  @media screen and (min-width: 1150px) and (max-width: 1600px) {
+    gap: 2.2vw;
+  }
   @media screen and (min-width: 480px) and (max-width: 1150px) {
     height: 1%;
     margin-left: 1vw;
-    gap: 2vw;
+    gap: 2.5vw;
   }
   @media screen and (min-width: 0px) and (max-width: 480px) {
     width: 10%;
@@ -388,7 +392,7 @@ h6 {
   gap: 0.7vw;
 
   p {
-    margin-top: 0;
+    //margin-top: 0;
   }
 
   @media screen and (min-width: 1150px) and (max-width: 1600px) {
@@ -398,15 +402,16 @@ h6 {
   }
   @media screen and (min-width: 870px) and (max-width: 1150px) {
     height: 1%;
-    gap: 2vw;
+    gap: 1.5vw;
   }
   @media screen and (min-width: 480px) and (max-width: 870px) {
     height: 5%;
-    gap: 3vw;
+    gap: 2.5vw;
   }
   @media screen and (min-width: 0px) and (max-width: 480px) {
-    height: 5%;
-    gap: 4vw;
+    margin-top: 1vw;
+    gap: 3vw;
+    margin-left: 2vw;
   }
 }
 
@@ -623,24 +628,6 @@ h6 {
   }
 }
 
-//.triangle {
-//  position: relative;
-//  top: 8vw;
-//  left: 61vw;
-//  width: 0;
-//  border-bottom:solid 38px variables.$red;
-//  border-right:solid 25px transparent;
-//  border-left:solid 25px transparent;
-//}
-//.triangle .inside-triangle {
-//  position: absolute;
-//  top: 9px;
-//  left:-21px;
-//  width:0;
-//  border-bottom:solid 26px white;
-//  border-right:solid 19px transparent;
-//  border-left:solid 21px transparent;
-//}
 .services {
   height: 25%;
   display: flex;
