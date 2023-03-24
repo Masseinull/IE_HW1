@@ -19,3 +19,7 @@ HTML design contains 2 main parts in its body:
 - **Sidebar**
 - **Main Items** <br>
 Which our Main Items part contains Intro, Services, Work History and Education parts.
+
+## License
+
+Distributed under the MIT License. See `LICENSE.txt` for more information.
